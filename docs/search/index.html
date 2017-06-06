@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+
+		<link rel="stylesheet" href="/css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="/js/main.js"></script>
+		<!-- Begin Jekyll SEO tag v2.1.0 -->
+<title>Search - Aviator</title>
+<meta property="og:title" content="Search" />
+<meta name="description" content="Jekyll template for API documentation." />
+<meta property="og:description" content="Jekyll template for API documentation." />
+<link rel="canonical" href="http://localhost:4000/search/" />
+<meta property="og:url" content="http://localhost:4000/search/" />
+<meta property="og:site_name" content="Aviator" />
+<script type="application/ld+json">
+{"@context": "http://schema.org",
+"@type": "WebPage",
+"headline": "Search",
+"description": "Jekyll template for API documentation.",
+"url": "http://localhost:4000/search/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+		
+	</head>
+	<body>
+		<header>
+			<h1>
+				<a href="/"></a>
+				<button type="button" class="open-nav" id="open-nav"></button>
+			</h1>
+
+			<form action="/search/" method="get">
+				<input type="text" name="q" id="search-input" placeholder="Search">
+				<input type="submit" value="Search" style="display: none;">
+			</form>
+
+			<div id="sidebar" class="sidebar">
+	
+	
+		
+	
+		
+			<section>
+				<h6>Documentation</h6>
+				<ul>
+					
+					
+						<li>
+							<a href="/#documentationgetting_started">
+								Getting Started
+								
+							</a>
+						</li>
+					
+						<li>
+							<a href="/#documentationhow_it_works">
+								How it works?
+								
+							</a>
+						</li>
+					
+						<li>
+							<a href="/#documentationhql">
+								HQL
+								
+							</a>
+						</li>
+					
+						<li>
+							<a href="/#documentationnpo">
+								Nested Procedure Operations
+								
+							</a>
+						</li>
+					
+						<li>
+							<a href="/#documentationgeospatial">
+								GeoSpatial - Search points using GPS
+								
+							</a>
+						</li>
+					
+						<li>
+							<a href="/#documentationschemas">
+								Schemas
+								
+							</a>
+						</li>
+					
+				</ul>
+			</section>
+		
+	
+		
+			<section>
+				<h6>APIs</h6>
+				<ul>
+					
+					
+						<li>
+							<a href="/#apiobjects_add">
+								/user
+								<span class="endpoint post"></span>
+							</a>
+						</li>
+					
+				</ul>
+			</section>
+		
+	
+</div>
+
+
+			<p class="copyright">
+				<a href="https://cloudcannon.com/">
+					Template by CloudCannon
+				</a>
+			</p>
+		</header>
+		<div class="main">
+			<div class="search-page">
+	<h2>Search Results</h2>
+	
+	<p><span id="search-process">Loading</span> results <span id="search-query-container" style="display: none;">for "<strong id="search-query"></strong>"</span></p>
+	<ul id="search-results"></ul>
+</div>
+
+<script>
+	window.data = {
+		
+			
+				
+					
+						
+						
+						"api-objects-add": {
+							"id": "api-objects-add",
+							"title": "/user",
+							"category": "api",
+							"description": "Create object with custom data",
+		  				"type": "post",
+							"url": "/#apiobjects_add",
+							"content": "branch_id\n  The branch id provided along with credentials\n  profile_id\n  The profile id provided along with credentials\n\n\nThe object will automatically stored and indexed into datastore\n\nCreate an object into datastore.\n\ncurl -i -XPOST -H \"Ckey: YOUR_APP_CKEY\" -d '{\"branch_id\": \"asisiud8s\", \"profile_id\": \"asdiajd9s8d89s\"}' http://api.hurakann/v1/user\n\n\n\nhttpc:request(post, \"http://api.hurakann.com\")."
+						}
+						
+					
+				
+			
+		
+			
+				
+					
+						,
+						
+						"documentation-geospatial": {
+							"id": "documentation-geospatial",
+							"title": "GeoSpatial - Search points using GPS",
+							"category": "documentation",
+							"description": "",
+		  				"type": "",
+							"url": "/#documentationgeospatial",
+							"content": "GeoSpatial allows you store (index) and update \"locations\" in your database segment to use for searching and calculating distances from locations stored to a single given point.\n\nImagine that you want implement a system to geo-referencing your users (for example, retail or proximity cases), so when some of your users (using a device), provide their location (latitude and longitude) and then you perform a search into your database to search the nearest location (previously registered) and The Hover answers with a resultset with that locations.\n\nUse case\n\nFor example, we saved this locations in our database using the API geospatial:\n\n\tLocation Store One: 18.956952,-99.2315226\n\tLocation Store Two: 18.9613766,-99.2344753\n\tLocation Store Three: 18.63222,-99.1615037\n\n\n\nNow one of our users provide his location with a point nearest of the location Location Store One then, sending that with the geospatial GET you should receive a resultset, ordered from the location nearest:\n\n{\"geos\":\n  [\n    {\"km\":0.13275527391449998,\"id\":\"IDLOCONE\",\"name\":\"Location Store One\"},\n    {\"km\":0.4584615115187,\"id\":\"IDLOCTWO\",\"name\":\"Location Store Two\"},\n    {\"km\":36.955166644128,\"id\":\"IDLOCTHREE\",\"name\":\"Location Store Three\"}\n  ]\n}\n\n\n\nLet’s analyze the results, as you can see, the nearest location is Location Store One since it is 0.1327 Km away, and the other locations are away from the user actual location.\n\nYou can found the doc for the API here"
+						}
+						
+					
+				
+			
+				
+					
+						,
+						
+						"documentation-getting-started": {
+							"id": "documentation-getting-started",
+							"title": "Getting Started",
+							"category": "documentation",
+							"description": "",
+		  				"type": "",
+							"url": "/#documentationgetting_started",
+							"content": "What is Hurakann?\n\nHurakann is a computing distributed, decentralized, concurrent and lightweight software platform for building private or public applications in the cloud. Hurakann was built on the following premises:\n\n\n  Concurrent: Support unlimited concurrent connections without side effects in performance.\n  Massive Data Processing: Store unlimited amounts of information of objects and keep high performance.\n  Scalability: Increase the capacity for process requests and storage adding nodes to a cluster as needed, adjusting automatically for higher performance.\n  Dynamical: Store, fetch, update or delete information as needed, using API’s or SDK’s.\n  Availability: Store, replicate and synchronize data between a collection of nodes, making it “clusterizable”\n  No-downtime: Even updating any resource, always run in “mode on” in a transparent layer.\n\n\nMotivation\n\nActually building an application (mobile, web, desktop) could be a tedious, large and slow task because developers need:\n\n\n  A cloud server hardware to mount the back-end.\n  To develop the back-end for data access.\n  To design the database or how the data is structured.\n\n\nThen, integration with the back-end side becomes a bottleneck in the development plan. Hurakann solves the problem providing a dynamic API to store, fetch, update and delete data that any application uses.\n\nManaging users, objects and entities, “come on IoT (Internet of Things)!”\n\nIn real world almost every application require managing USERS, like register, manage profiles, login, relationships and the integration with the newly called IoT (Internet of Things), so each user, object or entity could be linked to devices, actions or specific features, or a USER can be considered an ENTITY, and ARTEFACT or a THING.\n\nHurakann is able to manage all actions related to a single USER so adding functionality, integrating other applications and adding iterations to such USER translates in lowering development time and cost savings.\n\nAll applications are built in a “static” way so when something requires to be integrated or something requires to be added, the task becomes really complicated and time consuming.\n\nHurakann provides a dynamic access to objects or actions so they may be changed in versatile ways. The platform is able to grow up on data volume and design on the fly without side effects in performance. At this point Hurakann becomes a dynamic database for any application using native code.\n\nAPI - your database in the cloud simple and intelligible\n\nHurakann exposes the access to data stored in the database via RESTful services called API.\n\nAPI is the collection of RESTful services that is designed for specific actions over your stored objects. The API uses single resources allocated in the private or public clouds using a standard data formatting like JSON or XML.\n\nAny application looking for integration with Hurakann simply could access the platform through the API, using http protocol and following the correct structured file formats for each service.\n\nSDK - jumping to implementation, don’t worry about the black side\n\nWhen an application is built with Hurakann, developers don’t have to worry about how data is structured and accessed. However, in most cases, developers don’t want to learn or become related to work with integration protocols, file formats, encode and decode data, and collect things that could become a “headache”.\n\nAt this point using Hurakann API could produce a backlog in development time and slow down integration, because developers don’t know things such as: parse a file format, access to data parsed, send http requests, read responses, and other related things based on working with API’s.\n\nIn response to that, Hurakann provides a native integration for managing objects and actions, using a native programming language that developers are able to use for integration.  Languages sucha as java, object C or javascript.\n\nAnd that is something called “SDK” (Software Development Kit). The SDK is designed for each language to bind better with integration so Hurakann SDK is faster and easier to use than the Hurakann API.\n\nHurakann SDK provides a native way for a language to consume an API and guarantee developers not to spend extra time in integration and testing."
+						}
+						
+					
+				
+			
+				
+					
+						,
+						
+						"documentation-how-it-works": {
+							"id": "documentation-how-it-works",
+							"title": "How it works?",
+							"category": "documentation",
+							"description": "",
+		  				"type": "",
+							"url": "/#documentationhow_it_works",
+							"content": "Cluster (Nodes)\n\nHurakan is designed for distributed computing, what it means is that the system runs over \"nodes\".\n\nHurakann is written in Erlang taking advantage of concurrency, native lightweight processes and availability.\n\nEach node in Hurakann is a set of tools of a package, ready for building a cluster.\n\nHurakann is designed so that each node in the cluster balances the incoming requests among nodes avoiding that one member processes all. Each node in the cluster is an identical copy of other members so that all incoming requests are able to be processed by all members.\n\nHurakann uses primitive remote procedure calls (RPC) to balance the load of requests among nodes, so that a node receiving the request lookup for a \"free node of load\" or for a \"node with less load\" in the cluster and passes the request for processing.\n\nOne node could be of type:\n\n\n  \n    Neighbor:  the node is a worker in a cluster, and only processes required requests.  It is like an extension in the cluster.\n  \n  \n    Root:  the node works as \"main\", controlling neighbor nodes and balancing requests among them. This node type has a special feature: if it is disconnected from a cloud node then it will keep changes on the database for synced when it detects a connection. This node type is intended to work as an \"offline\" node, and the synced could be set as: enabled or disabled at any time. When a connection is detected the root node could handoff all data in the cloud to sync up the database, using vclocks.\n  \n  \n    Cloud: the node is in the cloud and could have root nodes connected. The node is responsible for keeping all set of data of all root nodes connected or simply work as a “root” node but in the cloud. Root nodes could be added, as you need them at any time.\n  \n\n\nVnodes\n\nVnode (Virtual Node) is a term used for describing virtual unique processes into a node, each virtual node is responsible for treating data, logging transactions and ensure atomicity and consistency of data. The vnode is a temporal process that lives while the processing of data is taking place.\n\nA vnode starts when incoming a request (from client) and it keeps alive while the request is processed, stops when the process of data has finished (commonly when client receive response). A vnode uses last write wins so for example if two or more request collide in the system at the same time, the last of them writting, updating or deleting data will win and this will be the final data preserved into the backend database.\n\nVnodes are built with 3 processes linked, each process is responsible for a specific task into the vnode, they are:\n\n\n  Worker\n  Tracer\n  Transactor\n\n\nA worker process executes the dirty work in the vnode, so the worker process and validate the data flow ensuring the consistency in the data when writting, deleting or updating in the backend database, so in more simple words the worker execute transaction by transaction (write, update, delete, fetch) in the backend database.\n\nA tracer process looks each transaction executed by the worker, so the tracer knows which one data is being modified at time, in others words the tracer is logging each transaction (write, update, delete, fetch) in the database backend.\n\nA transactor process saves the log of data that the tracer is looking and is 'supervising' to the worker so if the worker finish the transactor can determinate if it terminates with a success or failure. If the worker (for any reason) terminates in a success state the transactor can commit all data to the database backend, otherwise if the worker (for failure reasons) terminates (or abort) in a failure state the transactor can rollback all data to the database backend to a previous state and keeps the entire database in a state before executes the client request.\n\nPlugins or addons\n\nPlugins or addons is a special feature to allow adding modules, workers or applications into Hurakann node, and becomes an extension arm of the system.\n\nPlugins allow Hurakann to process specific tasks on the node, replicating all behaviour in the cluster. For example if you need to process incoming messages on a specific port and format, a nicely protocol implementation for a specific message, generating random data can be created with plugins.\n\nPlugins must be written in erlang and they are managed by Hurakann.\n\nSecurity Concerns\n\nCkey (Client Key Token) is an id to access the API, so it’s is used as an auth method against the black-box side, is an unique and unrepeatable value for each segment in the database. This token joined to another certificates in the core system ensures that all data are encrypted and stored in a specific segment of the database isolated from others, so only vnodes that are certificates to use the ckey can access data in the database. Ckey must be send in the Headers of each request in order to retrieve or push data. The certificates (including ckey) are created at the first time using the CLI and provided to the client."
+						}
+						
+					
+				
+			
+				
+					
+						,
+						
+						"documentation-hql": {
+							"id": "documentation-hql",
+							"title": "HQL",
+							"category": "documentation",
+							"description": "",
+		  				"type": "",
+							"url": "/#documentationhql",
+							"content": "With HQL you can query (search) over your stored and indexed objects into your database segment.\nHQL has many features to satisfy the most common search cases in a common system. HQL is inspired and based in Solr queries but with a powerful model that has many differences from the original.\n\nIn difference to other QL (Query Languages), HQL uses a specific syntax and commands to retrieve data.\nHurakann can interpret your query from a single line of code as in SQL SELECT, \nbut without specifiying the SELECT and FROM on the same query, just over your entity.\n\nIn the last version of HQL you must provide the datatype to each field in the query, so, if you save your object with some field as int, boolean or string, just provide that info to the query:\n\nWHERE name:s=Allison AND years:i=40 \n\n\n\nThe datatype must be after ':'. The supported datatypes are:\n\n\n  \n    \n      Prefix\n      Datatype\n    \n  \n  \n    \n      i\n      integer\n    \n    \n      s\n      string\n    \n    \n      b\n      boolean\n    \n    \n      f\n      float\n    \n    \n      dt\n      date\n    \n  \n\n\ndate type must be in format ISO 8601\n\nLet’s do it!\n\nSimple Querying\n\nFor example, in our database we saved our object whit name, lastname and also a custom parameters called _box_id, _years and _company_id, then our object looks like this:\n\n{\n  \"name\":\"Allison\",\n  \"lastname\":\"Mosshart\",\n  \"_box_id\":\"1AB456\",\n  \"_years\":40,\n  \"_company_id\":\"1abcb718ajcnakaks819\"\n}\n\n\n\nNow, how we can search all objects with ‘Allison’ in the field name?, simple, in the search API use HQL:\n\nWHERE name:s=Allison\n\n\n\nHQL uses AND, OR, NOT condition to satisfy logic operators, for example, search the objects with name ‘Allison’\nor with name ‘Jack’ but NOT name ‘Meg’:\n\nWHERE name:s=Allison OR name:s=Jack NOT name:s=Meg\n\n\n\nWildcard\n\nYou can use the wildcard * to match everything after or before a string comparison, example, search the objects that name starts with ‘Jac’ like ‘Jack’, ‘Jackie’:\n\nWHERE name:s=Jac*\n\n\n\nRanges\n\nYou can use ranges on fields that are numeric fields, for example, search the objects with years mayor than 30 and\nminor than 50:\n\nWHERE years:i&lt;50 AND years:i&gt;30\n\n\n\nRanges apply for datatypes: float, integer and date.\n\nRanges must be set with mayor and minor, for that purpose use wildcard * if one of limits are not provided, example, search years only mayor to 50:\n\nWHERE years:i&lt;* AND years:i&gt;50\n\n\n\n#### Time Series\n\nIn every object stored in the database there are two attributes indexed by default: inserted_at and updated_at. The timestamp is useful when you want retrieve objects in a range of time so for example you can query data from the first of this month until today (updated or inserted). In order to execute the query in a successful state the date must be converted to ISO 8601:\n\nWHERE inserted_at:dt&gt;2017-03-09T00:00:00Z AND inserted_at:dt&lt;2017-03-13T00:00:00Z...\t\n\n\n\nIf you noticed the date is passed in ISO 8601 format, so in the example the query will retrieve all objects created between 2017-March-09 and 2017-March-13.\n\nGrouping\n\nWhen you perform a complex search maybe grouping data could be useful, example, search the objects with name ‘Allison’ or Jack and box_id that starts with ‘ABC’:\n\nWHERE (name:s=Allison OR name:s=Jack) AND box_id:s=ABC*\n\n\n\nGrouped data are enclosed into parentheses ( ). HQL only allows one group at time, no group into group\n\nIncluded Fields\n\nIncluded fields is a feature of HQL to retrieve specific fields of a object in a search, example, search the objects with name ‘Allison’ and include on each result the years:\n\nWHERE name:s=Allison INCLUDE years\n\n\n\nFor more included fields, just separate with ‘,’ delimiter\n\nParent Fields\n\nWhen you create your object, any of your custom fields could have an id of another object inside (like a link), then in your search you want to know the parent object fields, example, search the objects with name ‘Allison’ and include on each result the years, also retrieve the name of the company that belongs the object:\n\nWHERE name:s=Allison INCLUDE years PARENT_FIELDS company_id\n\n\n\nFor more parent fields, just separate with ‘,’ delimiter\n\nHQL just retrieve parent fields from the actual object, just for one level\n\nThen on each object you can extract the tag ‘company_id_obj’ that is the object representing the company,\nsimilar to make a GET request. To extract the PARENT_FIELDS result from each object just concat to your field the prefix ‘obj’, so in the example we set PARENT_FIELDS with company_id, then extract company_id_obj\n\nSorting\n\nWith HQL you can sort your query results in ascendent or descendent form. To use this just use SORT_BY_ASC (for ascendent) or SORT_BY_DESC (for descendent) and the field that you want sort by, example, search the objects where name starts with Jac and then sort by name in ascendent form:\n\nWHERE name:s=Jac* SORT_BY_ASC name_s\n\n\n\nYou must set a valid field to sort by, the field must follow by the type of it, for example if your field is string, then: name_s, if it’s integer: name_i or if it’s boolean: name_b.\n\nAS LINK\n\nThe new version of HQL now support the LINK operation and it’s very simple to use, since it works like a JOIN in SQL systems. The LINK operation can be used when you want query your objects with a relationship between them in only one query (in one sentence), so for example, this allows you query data from different objects and link them to generate only one output.\n\nExample: imagine a system that a user can publish posts (in a blog), then each post is a single object in the database and the users publishing are other objects in the same system, then, how we can query the posts from the user with the nickname equals to almoss?, simple, use LINK:\n\nWHERE nickname=almoss AS user LINK entity=post AND owner=user.id INCLUDE favs,text\n\n\n\nExplaining the query: HQL evaluates the first query that is: nickname=almoss, then retrieve objects from database where the condition is true, so the result of this query is stored in a variable called user, and linked to another query searching the objects where entity equals to post and owner equals to id of the variable user.\n\nThe id in the alias is the id of the objects (when saving post, each of them have an owner attribute with the id of the user), but however you can use the attributes of the objects queried and assigned to the alias, for example, if our user has an attribute age, then we can use user.age to insert the value of the attribute using the alias.\n\nThe alias always have an attribute id that is the id of the object in the system.\n\nRegular Expressions\n\nAs in solr v4 the HQL supports regular expressions in queries, only in string fields, for example:\n\nWHERE name:s=/.*[Mm]egan.*/\n\n\n\nThe above query will search over objects where the string Megan or megan is present somewhere in the field.\nIf you need more info about how to use and examples how to use regular expression consult this tutorial.\n\nHQL BIFs (built-in functions)\n\nHQL also supports a feature called BIFs that is a built-in functions in the backend system, the built-in functions need a function declared over a field followed by a query and returns a single response instead many records as the common searches. The next are the BIFs supported for now:\n\n\n  \n    \n      BIF\n      Description\n    \n  \n  \n    \n      MAX\n      Returns the max value of a rows\n    \n    \n      MIN\n      Returns the min value of a rows\n    \n    \n      AVG\n      Returns the average of a rows (for a field)\n    \n    \n      SUM\n      Returns the sum of a rows (for a field)\n    \n  \n\n\nFor example, let’s say we want to know the total likes of all user’s posts, then to perform that we must use the SUM BIF:\n\nSUM likes:i WHERE entity=post AND nickname:s=Allison\n\n\n\nThe above query could return the sum of all likes: json {\"sum\": 5004}\n\nAnother good example could be if we want to know the age of the older employee and the average of all ages of all employees:\n\nMAX years:i WHERE name:s=* AND type:s=employee\n\n\nAVG years:i WHERE name:s=* AND type:s=employee\n\n\nThe result of each BIF is a single json with one attribute, containing the name of the BIF as key and the value will be the numeric result. Each BIF must be sent with a single field and the field must contains the prefix for datataype.\n\nRestrictions\n\n\n  A query could start with reserved words for a BIF: MAX, MIN, AVG, SUM\n  A query could start with reserved word WHERE\n  In a query, if not provide sort field, default is set to name\n  All fields must contains datatype, if not provided then s is used.\n  Conditions must be separated by spaces\n  OR, AND, NOT are reserved words and must be used in uppercase\n  PARENT_FIELDS and INCLUDE are reserved words and must be used in uppercase\n  For many fields on INCLUDE or PARENT_FIELDS use comma as delimiter\n  For SORT_BY_DESC and SORT_BY_ASC field must have a prefix of data type\n  For AS _ LINK the sentence must start with AS, after a var and finish with a LINK, then other query\n  Allowed operators are: =, &gt;, &lt;, &lt;=, &gt;="
+						}
+						
+					
+				
+			
+				
+					
+						,
+						
+						"documentation-npo": {
+							"id": "documentation-npo",
+							"title": "Nested Procedure Operations",
+							"category": "documentation",
+							"description": "",
+		  				"type": "",
+							"url": "/#documentationnpo",
+							"content": "Nested Procedure Operations (N.P.O) allows executing many operations in a row step-by-step, so you won’t deal with callbacks from your app. This method avoid inconsistence in data, for example, if you get an object and use the info to update another using your app, maybe external factors such as network connection issues or even programming validations could affect data if some of operations fail before executing the others.\n\nHurakann creates a single process to keep the order of steps and execute one by one, if some fails, then the entire operation is applied as rollback, otherwise commit the transaction.\n\nThe N.P.O works using a single interface (API Restful) with a JSON format, and the steps are described based on the web-services in Hurakann API, even you can use a nested procedure into another nested procedure!.\n\nFeatures\n\n\n  Many operations in a row step-by-step\n  Dynamical data injection using jsonpath\n\n\nHow it works?\n\nYou must define the steps in your procedure, and then model into the JSON request using the /nested/procedures endpoint, for example, let’s say, we want get an object from the database and then create another object so then a relantionship will be created\n\nFirst we need to know which one web-service is used for getting info of an object:\n\n\n  \n    \n      URI\n      Method\n      Inject\n      Request\n      Next Phase\n    \n  \n  \n    \n      user\n      GET\n      [ {\"from\": \"name\", \"to\": \"_parent_name\"} ]\n      String Json\n      Skip\n    \n  \n\n\nNow we have our first step, this will look like this:\n\n{\n  \"uri\": \"user\",\n  \"method\": \"GET\",\n  \"inject\": [{\"from\": \"name\", \"to\": \"_parent_name\"}],\n  \"request\":\"{\\\"user_id\\\":\\\"id\\\",\\\"branch_id\\\":\\\"bid\\\",\\\"phase\\\":\\\"phase1\\\"}\",\n  \"next\": { }\n}\n\n\n\nNow we must design the next step, and in this case the next step use the result of the first step searching the jsonpath equals to name and inject in a new attribute of the newly created object using again a jsonpath this time equals to _parent_name, so our next step looks like this:\n\n{\n  \"uri\": \"user\",\n  \"method\": \"POST\",\n  \"request\":\"{\n    \\\"branch_id\\\":\\\"bid\\\",\n    \\\"coloruser\\\":\\\"black\\\",\n    \\\"name\\\":\\\"John\\\",\n    \\\"phase\\\":\\\"phase1\\\",\n    \\\"user_id\\\":\\\"id\\\",\n    \\\"profile_id\\\":\\\"pid\\\",\n    \\\"_parent_name\\\":\\\"_\\\"\n  }\" \n}\n\n\n\nif you noticed, the final element of the request is a _parent_name, with this in the to (inject) we are indicating to the N.P.O that inject the value returned by the first step in this field.\n\nNow putting all together:\n\n{\n  \"uri\": \"user\",\n  \"method\": \"GET\",\n  \"inject\": [\n    { \"from\": \"name\", \"to\": \"_parent_name\"}\n  ],\n  \"request\": \"{\n    \\\"user_id\\\":\\\"id\\\",\n    \\\"branch_id\\\":\\\"bid\\\",\n    \\\"phase\\\":\\\"phase1\\\"\n  }\",\n  \"next\": {\n    \"uri\": \"user\",\n    \"method\": \"POST\",\n    \"request\": \"{\n      \\\"branch_id\\\":\\\"bid\\\",\n      \\\"coloruser\\\":\\\"black\\\",\n      \\\"name\\\":\\\"John\\\",\n      \\\"phase\\\":\\\"phase1\\\",\n      \\\"user_id\\\":\\\"id\\\",\n      \\\"profile_id\\\":\\\"pid\\\",\n      \\\"_parent_name\\\":\\\"_\\\"\n    }\"\n  }\n}\n\n\n\nCool!, now we dont worry about data inconsistence, since all operations all managed by Hurakann and we just use one request to do that!.\n\nLexical Rules\n\n\n  The uri is the original URI in the API Restful, but without versioning and if the uri contains more than once slash (/), replace this with dot (.).\n  The Method is the method used by the URI, always must be in uppercase.\n  Inject is an array of objects (from, to) with a jsonpath of data result, so the jsonpath is evaluated to get the value to send in next step (taken from the result of the actual step). The from argument represent the value to search (using jsonpath) in the response of the step. The to argument represent the path to replace (using jsonpath) with the new value.\n  In the injection of a value, set _ as the value of the attribute to replace.\n  Request is a JSON STRINGIFY of the request body or query-string (if GET Method)\n  Next is an object containing the next step, again uri, method, inject, request, and other next step (if any).\n\n\nJsonPath\n\nJsonPath is very similar to the XPath in Xml, so we use that for a common format of injection data.\nIf you need more info about how JSONPATH works click here\n\nYou can found the doc for the API here"
+						}
+						
+					
+				
+			
+				
+					
+						,
+						
+						"documentation-schemas": {
+							"id": "documentation-schemas",
+							"title": "Schemas",
+							"category": "documentation",
+							"description": "",
+		  				"type": "",
+							"url": "/#documentationschemas",
+							"content": "Schemas are the base to 'mapping' an entity or object into a backend database, similar to create a table structure in SQL systems. The base for an entity or object (the minimal unity) is the attribute or field, each entity or object has many attributes than can be stored into the whole object, the main characteristic is that each attribute is defined with a set of tools that can define its behaviour in the core and backend system.\n\nSchemas are defined with an XML with a specific structure that the core can parse and store, versioning your entity or object.\n\nWhen the Schema is uploaded it also translates the entity or object to a RESTful API, so the entity or object can be created, updated or fetched with a specific endpoint defined also in the schema, this is useful because a client can connect and implement this methods instead using the 'RAW' API exposed by The Hover and have a plus: all data is passed for a serie of validations, so the consistency of each field or attribute is guaranteed by the core instead of implement outside of the box.\n\nSchema definition\n\nThe schema must contain the certificates info of your account, so when using the dynamic endpoint you dont need pass this tedious info.\n\nThe certificates must include:\n\n\n  [x] name: the canonical name of entity or object.\n  [x] version: the version of schema.\n  [x] user_id: the user_id provided along with the certificates.\n  [x] branch_id: the branch_id provided along with the certificates.\n  [x] profile_id: the profile_id provided along with the certificates.\n\n\nAttributes\n\nAttributes or fields are the minimal unit of an entity or object, and in a schema you can define its behaviour before reach the durability into the backend database.\n\nEach attribute can contain:\n\n\n  [x] name: the name of your attribute, this define how your attribute is written in backend database, must start with '_'.\n  [x] required: if attribute is required or not when creating the entity, if not provided 'false' is used.\n  [x] datatype: the datatype of your attribute, the options are: boolean, integer, float, date or string.\n  [x] indexed: if attribute is searchable using THQL, default set to false.\n  [x] length: optional, the length of your attribute, must be expressed as an integer value even for integer datatype, if not provided 'unlimited' is used.\n  [x] validation: optional, a valid regex to run against the attribute value before write or update in backend database.\n  [x] default: optional, if the attribute has a default value when not provided.\n\n\nDynamic Endpoint (RESTful API)\n\nDynamic Endpoint define how the entity or object can be stored, updated or fetched using the rules declared in the attributes section.\n\nThe endpoint must contain:\n\n\n  [x] uri: the uri to write, update or fetch the entity or object.\n  [x] methods: the methods that can enable the uri, the options are: POST, PUT, GET.\n  [x] auth: the auth method to the uri, the supported for now are: oauth2 or none.\n\n\nHow to use\n\nFirst to all, you must define a XML containing: definition, attributes and dynamic endpoint, in this example we are using a schema that defines an entity called post:\n\n&lt;schema name=\"post\" version=\"1.5\" user_id=\"YOUR-USER-ID\" branch_id=\"YOUR-BRANCH-ID\" profile_id=\"YOUR-PROFILE-ID\"&gt;\n  &lt;attributes&gt;\n    &lt;attribute datatype=\"string\" name=\"_title\" required=\"true\" length=\"30\" indexed=\"true\" /&gt;\n    &lt;attribute datatype=\"string\" name=\"_body\" required=\"true\" length=\"140\" indexed=\"true\" /&gt;\n    &lt;attribute default=\"0\" datatype=\"integer\" name=\"_likes\" required=\"true\" length=\"3\" indexed=\"true\" /&gt;\n    &lt;attribute datatype=\"string\" name=\"_date\" required=\"false\" length=\"10\" indexed=\"true\" validation=\"20[1-3][0-9]-[0-1][0-2]-[0-3][0-9]\" /&gt;\n  &lt;/attributes&gt;\n  &lt;endpoint&gt;\n    &lt;uri&gt;/post&lt;/uri&gt;\n    &lt;methods&gt;POST,PUT,GET&lt;/methods&gt;\n    &lt;auth&gt;none&lt;/auth&gt;\n  &lt;/endpoint&gt;\n&lt;/schema&gt;\n\n\n\nIn the above schema we are defining four attributes for the post and each attribute has a specific behaviour, also an endpoint is defined in order to access to the write, update or fetch operations.\n\nThe next step is upload the schema, so The Hover can parse and create the dynamic endpoint:\n\ncurl -i -XPUT -H \"Ckey: YOUR-CKEY\" -d @schema_post.xml \"http://127.0.0.1:8099/v1/schema\"\n\n\n\nIf all goes ok the above request must respond with a 200 OK and then the dynamic endpoint is ready!!.\n\nOperations\n\nStoring\nStoring method run all validations for each attribute, ensuring that data passed all validations before be written into backend database.\nTo store an entity/object into the system using your custom defined schema (with the custom endpoint):\n\ncurl -i -XPOST -H \"Ckey: YOUR-CKEY\" -d '{\"_title\": \"Schemas\", \"_body\": \"Hello, I am using schemas\", \"_likes\": 1, \"_date\": \"2016-01-01\"}' \"http://127.0.0.1:8099/v1/post\"\n\n\n\nUpdating\nUpdating method run almost all validations, except for required attributes since in a update the required attributes can be updated or not (not always).\nTo update an entity/object into the system using your custom defined schema (with the custom endpoint):\n\ncurl -i -XPUT -H \"Ckey: YOUR-CKEY\" -d '{\"_title\": \"My Schemas\", \"id\": \"POST-ID\"}' \"http://127.0.0.1:8099/v1/post\"\n\n\n\nFetching\nTo fetch info of an entity/object from the system using your custom defined schema (with the custom endpoint):\n\ncurl -i -XGET -H \"Ckey: YOUR-CKEY\" \"http://127.0.0.1:8099/v1/post?id=POST-ID\"\n\n\n\nFuture Implementations\n\nFor future works more auth methods can be added to the dynamic endpoints."
+						}
+						
+					
+				
+			
+		
+			
+		
+	};
+</script>
+<script src="/js/lunr.min.js"></script>
+<script src="/js/search.js"></script>
+
+		</div>
+		<!--<script>
+			document.getElementById("open-nav").addEventListener("click", function () {
+				document.body.classList.toggle("nav-open");
+			});
+		</script>-->
+	</body>
+</html>
