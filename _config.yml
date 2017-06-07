@@ -1,15 +1,15 @@
 # ----
 # Site
 
-title: Aviator
-description: Jekyll template for API documentation.
+title: Hurakann
+description: Cloud Programming Engine.
 url: https://zgbjgg.github.io/aviator-jekyll-template/
 google_analytics_key:
 permalink: pretty
 
 collections:
   documentation:
-    title: Documentation
+    title: User's Guide
     position: 1
   api:
     title: APIs
