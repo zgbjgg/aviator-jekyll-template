@@ -7,7 +7,7 @@ Schemas are the base to `'mapping'` an entity or object into a backend database,
 
 Schemas are defined with an XML with a specific structure that the core can parse and store, versioning your entity or object.
 
-When the Schema is uploaded it also translates the entity or object to a RESTful API, so the entity or object can be created, updated or fetched with a specific endpoint defined also in the schema, this is useful because a client can connect and implement this methods instead using the `'RAW'` API exposed by The Hover and have a plus: all data is passed for a serie of validations, so the consistency of each field or attribute is guaranteed by the core instead of implement outside of the box.
+When the Schema is uploaded it also translates the entity or object to a RESTful API, so the entity or object can be created, updated or fetched with a specific endpoint defined also in the schema, this is useful because a client can connect and implement this methods instead using the `'RAW'` API exposed by **Hurakann** and have a plus: all data is passed for a serie of validations, so the consistency of each field or attribute is guaranteed by the core instead of implement outside of the box.
 
 
 #### **_Schema definition_**
@@ -68,7 +68,7 @@ First to all, you must define a XML containing: definition, attributes and dynam
 
 In the above schema we are defining four attributes for the `post` and each attribute has a specific behaviour, also an endpoint is defined in order to access to the write, update or fetch operations.
 
-The next step is upload the schema, so The Hover can parse and create the dynamic endpoint:
+The next step is upload the schema, so **Hurakann** can parse and create the dynamic endpoint:
 
 ```bash
 curl -i -XPUT -H "Ckey: YOUR-CKEY" -d @schema_post.xml "http://127.0.0.1:8099/v1/schema"

@@ -5,7 +5,7 @@ position: 5
 
 GeoSpatial allows you store (index) and update `"locations"` in your database segment to use for searching and calculating distances from locations stored to a single given point.
 
-Imagine that you want implement a system to geo-referencing your users (for example, retail or proximity cases), so when some of your users (using a device), provide their location (latitude and longitude) and then you perform a search into your database to search the nearest location (previously registered) and The Hover answers with a resultset with that locations.
+Imagine that you want implement a system to geo-referencing your users (for example, retail or proximity cases), so when some of your users (using a device), provide their location (latitude and longitude) and then you perform a search into your database to search the nearest location (previously registered) and **Hurakann** answers with a resultset with that locations.
 
 #### **_Use case_**
 
