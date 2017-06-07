@@ -1,7 +1,5 @@
 ## Develop
 
-Aviator was built with [Jekyll](http://jekyllrb.com/) version 3.1.6, but should support newer versions as well.
-
 Install the dependencies with [Bundler](http://bundler.io/):
 
 ~~~bash
