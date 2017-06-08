@@ -31,7 +31,7 @@ Each attribute can contain:
 - [x] **`name`**: the name of your attribute, this define how your attribute is written in backend database, must start with `'_'`.
 - [x] **`required`**: if attribute is required or not when creating the entity, if not provided `'false'` is used.
 - [x] **`datatype`**: the datatype of your attribute, the options are: ```boolean, integer, float, date or string```.
-- [x] **`indexed`**: if attribute is searchable using `THQL`, default set to false.
+- [x] **`indexed`**: if attribute is searchable using `HQL`, default set to false.
 - [x] **`length`**: optional, the length of your attribute, must be expressed as an integer value even for integer datatype, if not provided `'unlimited'` is used.
 - [x] **`validation`**: optional, a valid regex to run against the attribute value before write or update in backend database.
 - [x] **`default`**: optional, if the attribute has a default value when not provided.

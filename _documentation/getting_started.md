@@ -2,7 +2,7 @@
 title: Getting Started
 position: 1
 ---
-![alt text](/images/logo.png)
+![alt text](images/logo.png)
 
 #### _What is **Hurakann**?_
 
