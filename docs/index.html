@@ -1,146 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" >
-
-		<link rel="stylesheet" href="css/style.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-		<script src="js/main.js"></script>
-		<!-- Begin Jekyll SEO tag v2.1.0 -->
-<title>API Docs - Aviator</title>
-<meta property="og:title" content="API Docs" />
-<meta name="description" content="Jekyll template for API documentation." />
-<meta property="og:description" content="Jekyll template for API documentation." />
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+        <link rel="stylesheet" href="/css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="/js/main.js"></script>
+        <!-- Begin Jekyll SEO tag v2.1.0 -->
+<title>Hurakann Docs - Hurakann</title>
+<meta property="og:title" content="Hurakann Docs" />
+<meta name="description" content="Cloud Programming Engine." />
+<meta property="og:description" content="Cloud Programming Engine." />
 <link rel="canonical" href="http://localhost:4000/" />
 <meta property="og:url" content="http://localhost:4000/" />
-<meta property="og:site_name" content="Aviator" />
+<meta property="og:site_name" content="Hurakann" />
 <script type="application/ld+json">
 {"@context": "http://schema.org",
 "@type": "WebSite",
-"name": "Aviator",
-"headline": "API Docs",
-"description": "Jekyll template for API documentation.",
+"name": "Hurakann",
+"headline": "Hurakann Docs",
+"description": "Cloud Programming Engine.",
 "url": "http://localhost:4000/"}</script>
 <!-- End Jekyll SEO tag -->
 
-
-		
-	</head>
-	<body>
-		<header>
-			<h1>
-				<a href="/"></a>
-				<button type="button" class="open-nav" id="open-nav"></button>
-			</h1>
-
-			<form action="/search/" method="get">
-				<input type="text" name="q" id="search-input" placeholder="Search">
-				<input type="submit" value="Search" style="display: none;">
-			</form>
-
-			<div id="sidebar" class="sidebar">
-	
-	
-		
-	
-		
-			<section>
-				<h6>Documentation</h6>
-				<ul>
-					
-					
-						<li>
-							<a href="#documentationgetting_started">
-								Getting Started
-								
-							</a>
-						</li>
-					
-						<li>
-							<a href="#documentationhow_it_works">
-								How it works?
-								
-							</a>
-						</li>
-					
-						<li>
-							<a href="#documentationhql">
-								HQL
-								
-							</a>
-						</li>
-					
-						<li>
-							<a href="#documentationnpo">
-								Nested Procedure Operations
-								
-							</a>
-						</li>
-					
-						<li>
-							<a href="#documentationgeospatial">
-								GeoSpatial - Search points using GPS
-								
-							</a>
-						</li>
-					
-						<li>
-							<a href="#documentationschemas">
-								Schemas
-								
-							</a>
-						</li>
-					
-				</ul>
-			</section>
-		
-	
-		
-			<section>
-				<h6>APIs</h6>
-				<ul>
-					
-					
-						<li>
-							<a href="#apiobjects_add">
-								/user
-								<span class="endpoint post"></span>
-							</a>
-						</li>
-					
-				</ul>
-			</section>
-		
-	
+        
+    </head>
+    <body>
+        <header>
+            <h1>
+                <a href="/"></a>
+                <button type="button" class="open-nav" id="open-nav"></button>
+            </h1>
+            <form action="/search/" method="get">
+                <input type="text" name="q" id="search-input" placeholder="Search">
+                <input type="submit" value="Search" style="display: none;">
+            </form>
+            <div id="sidebar" class="sidebar">
+    
+    
+        
+    
+        
+            <section>
+                <h6>User's Guide</h6>
+                <ul>
+                    
+                    
+                    <li>
+                        <a href="#documentationgetting_started">
+                            Getting Started
+                            
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#documentationhow_it_works">
+                            How it works?
+                            
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#documentationhql">
+                            HQL
+                            
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#documentationnpo">
+                            Nested Procedure Operations
+                            
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#documentationgeospatial">
+                            GeoSpatial - Search points using GPS
+                            
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#documentationschemas">
+                            Schemas
+                            
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#documentationauhtentication">
+                            Authentication & Codes
+                            
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#documentationfast_track">
+                            Fast Track
+                            
+                        </a>
+                    </li>
+                    
+                </ul>
+            </section>
+        
+    
+        
+            <section>
+                <h6>APIs</h6>
+                <ul>
+                    
+                    
+                    <li>
+                        <a href="#apiobjects_add">
+                            /user
+                            <span class="endpoint post"></span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#apiobjects_update">
+                            /user
+                            <span class="endpoint put"></span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#apiobjects_get">
+                            /user
+                            <span class="endpoint get"></span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#apiavailability_get">
+                            /user/availability
+                            <span class="endpoint get"></span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#apiiscolor_get">
+                            /user/is_color
+                            <span class="endpoint get"></span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#apifile_add">
+                            /user/file
+                            <span class="endpoint post"></span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#apifile_delete">
+                            /user/file
+                            <span class="endpoint delete"></span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#apifile_get">
+                            /user/file
+                            <span class="endpoint get"></span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#apilogin">
+                            /user/login
+                            <span class="endpoint get"></span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#apirestore">
+                            /user/login/restore
+                            <span class="endpoint get"></span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#apireset">
+                            /user/login/reset
+                            <span class="endpoint post"></span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#apichangepass">
+                            /user/login/change_password
+                            <span class="endpoint put"></span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#apimerge_add">
+                            /user/merge
+                            <span class="endpoint post"></span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#apimerge_update">
+                            /user/merge
+                            <span class="endpoint put"></span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#apimerge_get">
+                            /user/merge
+                            <span class="endpoint get"></span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#apinotification_add">
+                            /user/notifications
+                            <span class="endpoint post"></span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#apinotification_update">
+                            /user/notifications
+                            <span class="endpoint put"></span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#apinotification_delete">
+                            /user/notifications
+                            <span class="endpoint delete"></span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#apinotification_get">
+                            /user/notifications
+                            <span class="endpoint get"></span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#apisearch">
+                            /user/search/ql
+                            <span class="endpoint get"></span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#apitags_add">
+                            /user/tags
+                            <span class="endpoint post"></span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#apitags_update">
+                            /user/tags
+                            <span class="endpoint put"></span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#apitags_get">
+                            /user/tags
+                            <span class="endpoint get"></span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#apifingerprintcheck">
+                            /fingerprint/verify
+                            <span class="endpoint get"></span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#apifingerprintmatch">
+                            /match/fingerprint
+                            <span class="endpoint get"></span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#apimobile_update">
+                            /mobile/register
+                            <span class="endpoint put"></span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#apimobile_add">
+                            /mobile/register
+                            <span class="endpoint post"></span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#apimobile_send">
+                            /mobile/send
+                            <span class="endpoint post"></span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#apigeospatial_add">
+                            /v1/geospatial
+                            <span class="endpoint post"></span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#apigeospatial_update">
+                            /v1/geospatial
+                            <span class="endpoint put"></span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#apigeospatial_get">
+                            /v1/geospatial
+                            <span class="endpoint get"></span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </section>
+        
+    
 </div>
 
+            <p class="copyright">
+                <a href="https://github.com/TheHover">
+                    Follow us on github
+                </a>
+            </p>
+        </header>
+        <div class="main">
+            
 
-			<p class="copyright">
-				<a href="https://cloudcannon.com/">
-					Template by CloudCannon
-				</a>
-			</p>
-		</header>
-		<div class="main">
-			
+    
+        
 
-	
-	
-
-	
-	
-		<section class="doc-content">
-			<section class="left-docs">
-				<h3>
-					<a id="documentationgetting_started">
-						Getting Started
-						
-					</a>
-				</h3>
-				
-
-				<p><img src="images/logo.png" alt="alt text" /></p>
+    
+        
+            <section class="doc-content">
+                <section class="left-docs">
+                    <h3>
+                        <a id="documentationgetting_started">
+                            Getting Started
+                            
+                        </a>
+                    </h3>
+                    
+                    <p><img src="images/logo.png" alt="alt text" /></p>
 
 <h4 id="what-is-hurakann"><em>What is <strong>Hurakann</strong>?</em></h4>
 
@@ -197,20 +415,19 @@
 
 <p><em><strong>Hurakann</strong> SDK provides a native way for a language to consume an API and guarantee developers not to spend extra time in integration and testing.</em></p>
 
-			</section>
-		</section>
-	
-		<section class="doc-content">
-			<section class="left-docs">
-				<h3>
-					<a id="documentationhow_it_works">
-						How it works?
-						
-					</a>
-				</h3>
-				
-
-				<h4 id="cluster-nodes"><strong><em>Cluster (Nodes)</em></strong></h4>
+                </section>
+            </section>
+        
+            <section class="doc-content">
+                <section class="left-docs">
+                    <h3>
+                        <a id="documentationhow_it_works">
+                            How it works?
+                            
+                        </a>
+                    </h3>
+                    
+                    <h4 id="cluster-nodes"><strong><em>Cluster (Nodes)</em></strong></h4>
 
 <p><strong>Hurakan</strong> is designed for distributed computing, what it means is that the system runs over <code class="highlighter-rouge">"nodes"</code>.</p>
 
@@ -268,20 +485,19 @@
 
 <p><code class="highlighter-rouge">Ckey</code> (Client Key Token) is an id to access the API, so it’s is used as an auth method against the black-box side, is an unique and unrepeatable value for each segment in the database. This token joined to another certificates in the core system ensures that all data are encrypted and stored in a specific segment of the database isolated from others, so only <code class="highlighter-rouge">vnodes</code> that are certificates to use the <code class="highlighter-rouge">ckey</code> can access data in the database. Ckey must be send in the Headers of each request in order to retrieve or push data. The certificates (including ckey) are created at the first time using the <code class="highlighter-rouge">CLI</code> and provided to the client.</p>
 
-			</section>
-		</section>
-	
-		<section class="doc-content">
-			<section class="left-docs">
-				<h3>
-					<a id="documentationhql">
-						HQL
-						
-					</a>
-				</h3>
-				
-
-				<p>With HQL you can query (search) over your stored and indexed objects into your database segment.
+                </section>
+            </section>
+        
+            <section class="doc-content">
+                <section class="left-docs">
+                    <h3>
+                        <a id="documentationhql">
+                            HQL
+                            
+                        </a>
+                    </h3>
+                    
+                    <p>With HQL you can query (search) over your stored and indexed objects into your database segment.
 HQL has many features to satisfy the most common search cases in a common system. HQL is inspired and based in <code class="highlighter-rouge">Solr</code> queries but with a powerful model that has many differences from the original.</p>
 
 <p>In difference to other QL (Query Languages), HQL uses a specific syntax and commands to retrieve data.
@@ -530,20 +746,19 @@ If you need more info about how to use and examples how to use regular expressio
   <li>Allowed operators are: <code class="highlighter-rouge">=</code>, <code class="highlighter-rouge">&gt;</code>, <code class="highlighter-rouge">&lt;</code>, <code class="highlighter-rouge">&lt;=</code>, <code class="highlighter-rouge">&gt;=</code></li>
 </ul>
 
-			</section>
-		</section>
-	
-		<section class="doc-content">
-			<section class="left-docs">
-				<h3>
-					<a id="documentationnpo">
-						Nested Procedure Operations
-						
-					</a>
-				</h3>
-				
-
-				<p>Nested Procedure Operations (N.P.O) allows executing many operations in a row <code class="highlighter-rouge">step-by-step</code>, so you won’t deal with callbacks from your app. This method avoid inconsistence in data, for example, if you get an object and use the info to update another using your app, maybe external factors such as network connection issues or even programming validations could affect data if some of operations fail before executing the others.</p>
+                </section>
+            </section>
+        
+            <section class="doc-content">
+                <section class="left-docs">
+                    <h3>
+                        <a id="documentationnpo">
+                            Nested Procedure Operations
+                            
+                        </a>
+                    </h3>
+                    
+                    <p>Nested Procedure Operations (N.P.O) allows executing many operations in a row <code class="highlighter-rouge">step-by-step</code>, so you won’t deal with callbacks from your app. This method avoid inconsistence in data, for example, if you get an object and use the info to update another using your app, maybe external factors such as network connection issues or even programming validations could affect data if some of operations fail before executing the others.</p>
 
 <p>Hurakann creates a single process to keep the order of steps and execute one by one, if some fails, then the entire operation is applied as <code class="highlighter-rouge">rollback</code>, otherwise <code class="highlighter-rouge">commit</code> the transaction.</p>
 
@@ -666,22 +881,21 @@ If you need more info about how <code class="highlighter-rouge">JSONPATH</code> 
 <p>You can found the doc for the API <a href="http://docs.hoverapi.apiary.io/#reference/nestedprocedures">here</a></p>
 
 
-			</section>
-		</section>
-	
-		<section class="doc-content">
-			<section class="left-docs">
-				<h3>
-					<a id="documentationgeospatial">
-						GeoSpatial - Search points using GPS
-						
-					</a>
-				</h3>
-				
+                </section>
+            </section>
+        
+            <section class="doc-content">
+                <section class="left-docs">
+                    <h3>
+                        <a id="documentationgeospatial">
+                            GeoSpatial - Search points using GPS
+                            
+                        </a>
+                    </h3>
+                    
+                    <p>GeoSpatial allows you store (index) and update <code class="highlighter-rouge">"locations"</code> in your database segment to use for searching and calculating distances from locations stored to a single given point.</p>
 
-				<p>GeoSpatial allows you store (index) and update <code class="highlighter-rouge">"locations"</code> in your database segment to use for searching and calculating distances from locations stored to a single given point.</p>
-
-<p>Imagine that you want implement a system to geo-referencing your users (for example, retail or proximity cases), so when some of your users (using a device), provide their location (latitude and longitude) and then you perform a search into your database to search the nearest location (previously registered) and The Hover answers with a resultset with that locations.</p>
+<p>Imagine that you want implement a system to geo-referencing your users (for example, retail or proximity cases), so when some of your users (using a device), provide their location (latitude and longitude) and then you perform a search into your database to search the nearest location (previously registered) and <strong>Hurakann</strong> answers with a resultset with that locations.</p>
 
 <h4 id="use-case"><strong><em>Use case</em></strong></h4>
 
@@ -709,24 +923,23 @@ If you need more info about how <code class="highlighter-rouge">JSONPATH</code> 
 
 <p>You can found the doc for the API <a href="http://docs.hoverapi.apiary.io/#reference/geospatial">here</a></p>
 
-			</section>
-		</section>
-	
-		<section class="doc-content">
-			<section class="left-docs">
-				<h3>
-					<a id="documentationschemas">
-						Schemas
-						
-					</a>
-				</h3>
-				
-
-				<p>Schemas are the base to <code class="highlighter-rouge">'mapping'</code> an entity or object into a backend database, similar to create a table structure in SQL systems. The base for an entity or object (the minimal unity) is the attribute or field, each entity or object has many attributes than can be stored into the whole object, the main characteristic is that each attribute is defined with a set of tools that can define its behaviour in the core and backend system.</p>
+                </section>
+            </section>
+        
+            <section class="doc-content">
+                <section class="left-docs">
+                    <h3>
+                        <a id="documentationschemas">
+                            Schemas
+                            
+                        </a>
+                    </h3>
+                    
+                    <p>Schemas are the base to <code class="highlighter-rouge">'mapping'</code> an entity or object into a backend database, similar to create a table structure in SQL systems. The base for an entity or object (the minimal unity) is the attribute or field, each entity or object has many attributes than can be stored into the whole object, the main characteristic is that each attribute is defined with a set of tools that can define its behaviour in the core and backend system.</p>
 
 <p>Schemas are defined with an XML with a specific structure that the core can parse and store, versioning your entity or object.</p>
 
-<p>When the Schema is uploaded it also translates the entity or object to a RESTful API, so the entity or object can be created, updated or fetched with a specific endpoint defined also in the schema, this is useful because a client can connect and implement this methods instead using the <code class="highlighter-rouge">'RAW'</code> API exposed by The Hover and have a plus: all data is passed for a serie of validations, so the consistency of each field or attribute is guaranteed by the core instead of implement outside of the box.</p>
+<p>When the Schema is uploaded it also translates the entity or object to a RESTful API, so the entity or object can be created, updated or fetched with a specific endpoint defined also in the schema, this is useful because a client can connect and implement this methods instead using the <code class="highlighter-rouge">'RAW'</code> API exposed by <strong>Hurakann</strong> and have a plus: all data is passed for a serie of validations, so the consistency of each field or attribute is guaranteed by the core instead of implement outside of the box.</p>
 
 <h4 id="schema-definition"><strong><em>Schema definition</em></strong></h4>
 
@@ -752,7 +965,7 @@ If you need more info about how <code class="highlighter-rouge">JSONPATH</code> 
   <li>[x] <strong><code class="highlighter-rouge">name</code></strong>: the name of your attribute, this define how your attribute is written in backend database, must start with <code class="highlighter-rouge">'_'</code>.</li>
   <li>[x] <strong><code class="highlighter-rouge">required</code></strong>: if attribute is required or not when creating the entity, if not provided <code class="highlighter-rouge">'false'</code> is used.</li>
   <li>[x] <strong><code class="highlighter-rouge">datatype</code></strong>: the datatype of your attribute, the options are: <code class="highlighter-rouge">boolean, integer, float, date or string</code>.</li>
-  <li>[x] <strong><code class="highlighter-rouge">indexed</code></strong>: if attribute is searchable using <code class="highlighter-rouge">THQL</code>, default set to false.</li>
+  <li>[x] <strong><code class="highlighter-rouge">indexed</code></strong>: if attribute is searchable using <code class="highlighter-rouge">HQL</code>, default set to false.</li>
   <li>[x] <strong><code class="highlighter-rouge">length</code></strong>: optional, the length of your attribute, must be expressed as an integer value even for integer datatype, if not provided <code class="highlighter-rouge">'unlimited'</code> is used.</li>
   <li>[x] <strong><code class="highlighter-rouge">validation</code></strong>: optional, a valid regex to run against the attribute value before write or update in backend database.</li>
   <li>[x] <strong><code class="highlighter-rouge">default</code></strong>: optional, if the attribute has a default value when not provided.</li>
@@ -792,7 +1005,7 @@ If you need more info about how <code class="highlighter-rouge">JSONPATH</code> 
 
 <p>In the above schema we are defining four attributes for the <code class="highlighter-rouge">post</code> and each attribute has a specific behaviour, also an endpoint is defined in order to access to the write, update or fetch operations.</p>
 
-<p>The next step is upload the schema, so The Hover can parse and create the dynamic endpoint:</p>
+<p>The next step is upload the schema, so <strong>Hurakann</strong> can parse and create the dynamic endpoint:</p>
 
 <div class="language-bash highlighter-rouge"><pre class="highlight"><code>curl -i -XPUT -H <span class="s2">"Ckey: YOUR-CKEY"</span> -d @schema_post.xml <span class="s2">"http://127.0.0.1:8099/v1/schema"</span>
 </code></pre>
@@ -830,55 +1043,1192 @@ To update an entity/object into the system using your custom defined schema (wit
 <p>For future works more auth methods can be added to the dynamic endpoints.</p>
 
 
-			</section>
-		</section>
-	
+                </section>
+            </section>
+        
+            <section class="doc-content">
+                <section class="left-docs">
+                    <h3>
+                        <a id="documentationauhtentication">
+                            Authentication & Codes
+                            
+                        </a>
+                    </h3>
+                    
+                    <p>The main way of API authentication is a client token provided along with your <strong>Hurakann</strong> credentials, so sending this value in the headers of each
+request will be enough.</p>
 
-	
-	
-		<section class="doc-content">
-			<section class="left-docs">
-				<h3>
-					<a id="apiobjects_add">
-						/user
-						
-							<span class="endpoint post"></span>
-						
-					</a>
-				</h3>
-				
-					<p class="description">Create object with custom data</p>
-				
+<p class="error">If not provided <code class="highlighter-rouge">Ckey</code> is sent then the API will return an auth error code: <code class="highlighter-rouge">401 Unauthorized</code></p>
 
-				<h6>Parameters</h6><dl>
+<p class="info">The uri is built with a prefix of <code class="highlighter-rouge">v1</code> for all listed API endpoints, for example: <code class="highlighter-rouge">/v1/user/file</code></p>
+
+<p>The next are a list of http codes returned by the API and its meaning</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>200</td>
+      <td>Ok</td>
+      <td>Success</td>
+    </tr>
+    <tr>
+      <td>201</td>
+      <td>Created</td>
+      <td>Creation successful</td>
+    </tr>
+    <tr>
+      <td>204</td>
+      <td>No Content</td>
+      <td>No content in response, similar to 404 but for GET</td>
+    </tr>
+    <tr>
+      <td>400</td>
+      <td>Bad Request</td>
+      <td>Something went wrong in the core</td>
+    </tr>
+    <tr>
+      <td>404</td>
+      <td>Not Found</td>
+      <td>Some attribute provided in the request was not found in the datastore</td>
+    </tr>
+    <tr>
+      <td>501</td>
+      <td>Not Implemented</td>
+      <td>Could not resolve the uri</td>
+    </tr>
+    <tr>
+      <td>401</td>
+      <td>Unauthorized</td>
+      <td>No ckey present or not found in datastore (wrong token)</td>
+    </tr>
+    <tr>
+      <td>412</td>
+      <td>Precondition Failed</td>
+      <td>Some required attribute was not send in the request</td>
+    </tr>
+  </tbody>
+</table>
+
+
+                </section>
+            </section>
+        
+            <section class="doc-content">
+                <section class="left-docs">
+                    <h3>
+                        <a id="documentationfast_track">
+                            Fast Track
+                            
+                        </a>
+                    </h3>
+                    
+                    <p><strong>Coming soon</strong></p>
+
+                </section>
+            </section>
+        
+
+    
+        
+            <section class="doc-content">
+                <section class="left-docs">
+                    <h3>
+                        <a id="apiobjects_add">
+                            /user
+                            
+                                <span class="endpoint post"></span>
+                            
+                        </a>
+                    </h3>
+                    
+                        <p class="description">Create object with custom data into datastore</p>
+                    
+                    <h6>Parameters</h6><dl>
   <dt>branch_id</dt>
   <dd>The branch id provided along with credentials</dd>
   <dt>profile_id</dt>
   <dd>The profile id provided along with credentials</dd>
+  <dt>user_id</dt>
+  <dd>The user id provided along with credentials</dd>
+  <dt>coloruser</dt>
+  <dd>The color of the object, <code class="highlighter-rouge">black</code> objects cannot create a tree below them, <code class="highlighter-rouge">blue</code> can do it.</dd>
+  <dt>phase</dt>
+  <dd>The phase for the object. Default to <code class="highlighter-rouge">phase1</code>.</dd>
+  <dt>password</dt>
+  <dd>The password for the object (used login service).</dd>
+  <dt>name</dt>
+  <dd>The name for the object. This value is set for default purposes and you can use it in your own way.</dd>
+  <dt>email</dt>
+  <dd>The email for the object (used in login service)</dd>
+  <dt>username</dt>
+  <dd>The username for the object (used in login service)</dd>
+  <dt>latitude</dt>
+  <dd>If object is a location</dd>
+  <dt>longitude</dt>
+  <dd>If object is a location</dd>
+  <dt>lastname</dt>
+  <dd>The lastname for the object. This value is set for default purposes and you can use it in your own way.</dd>
+  <dt>lastname2</dt>
+  <dd>The lastname2 for the object. This value is set for default purposes and you can use it in your own way.</dd>
 </dl>
 
-<p class="success">The object will automatically stored and indexed into datastore</p>
+<p class="info">For custom attributes add them starting with a <code class="highlighter-rouge">_</code> and the name for the attribute. Value of attribute will be determinating automatically based on format</p>
 
-<p>Create an object into datastore.</p>
+<p class="success">The object will be automatically stored and indexed into datastore</p>
 
-<div title="cURL" class="language-shell highlighter-rouge"><pre class="highlight"><code>curl -i -XPOST -H <span class="s2">"Ckey: YOUR_APP_CKEY"</span> -d <span class="s1">'{"branch_id": "asisiud8s", "profile_id": "asdiajd9s8d89s"}'</span> http://api.hurakann/v1/user
+<div title="cURL" class="language-shell highlighter-rouge"><pre class="highlight"><code>curl -i -XPOST -H <span class="s2">"Ckey: YOUR_APP_CKEY"</span> -d <span class="s1">'{"branch_id": "YOUR_BRANCH_ID", "profile_id": "YOUR_PROFILE_ID", "user_id": "YOUR_USER_ID", "coloruser": "black", "phase": "phase1", "_greeting": "hello", "_likes": 10}'</span> http://api.hurakann/v1/user
 </code></pre>
 </div>
 
-<div title="Erlang" class="language-erlang highlighter-rouge"><pre class="highlight"><code><span class="nn">httpc</span><span class="p">:</span><span class="nf">request</span><span class="p">(</span><span class="n">post</span><span class="p">,</span> <span class="s">"http://api.hurakann.com"</span><span class="p">).</span>
+                </section>
+            </section>
+        
+            <section class="doc-content">
+                <section class="left-docs">
+                    <h3>
+                        <a id="apiobjects_update">
+                            /user
+                            
+                                <span class="endpoint put"></span>
+                            
+                        </a>
+                    </h3>
+                    
+                        <p class="description">Update object with custom data into datastore</p>
+                    
+                    <h6>Parameters</h6><dl>
+  <dt>branch_id</dt>
+  <dd>The branch id provided along with credentials</dd>
+  <dt>user_id</dt>
+  <dd>The id of the object previously stored</dd>
+</dl>
+
+<p class="info">For custom attributes add them starting with a <code class="highlighter-rouge">_</code> and the name for the attribute. Value of attribute will be determinating automatically based on format</p>
+
+<p class="success">The object will be automatically updated and re-indexed into datastore</p>
+
+<div title="cURL" class="language-shell highlighter-rouge"><pre class="highlight"><code>curl -i -XPUT -H <span class="s2">"Ckey: YOUR_APP_CKEY"</span> -d <span class="s1">'{"branch_id": "YOUR_BRANCH_ID", "user_id": "ID", "_greeting": "hello", "_likes": 10}'</span> http://api.hurakann/v1/user
 </code></pre>
 </div>
 
-			</section>
-		</section>
-	
+                </section>
+            </section>
+        
+            <section class="doc-content">
+                <section class="left-docs">
+                    <h3>
+                        <a id="apiobjects_get">
+                            /user
+                            
+                                <span class="endpoint get"></span>
+                            
+                        </a>
+                    </h3>
+                    
+                        <p class="description">Get object with custom data from datastore</p>
+                    
+                    <h6>Parameters</h6><dl>
+  <dt>branch_id</dt>
+  <dd>The branch id provided along with credentials</dd>
+  <dt>user_id</dt>
+  <dd>The user id for the object previously stored</dd>
+  <dt>phase</dt>
+  <dd>The phase for the object, can be <code class="highlighter-rouge">phase1</code> or <code class="highlighter-rouge">all</code>.</dd>
+</dl>
+
+<p class="success">The response contains the object previously stored with custom data from datastore</p>
+
+<div title="Response" class="language-json highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"user"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"branch_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ID"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nt">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PROVISIONING-PROFILE-APP"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"profile_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"YOUR_PROFILE_ID"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nt">"phase"</span><span class="p">:</span><span class="w"> </span><span class="s2">"phase1"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-03-09T00:00:00Z"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-03-09T00:00:00Z"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"fmd"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"greeting"</span><span class="p">:</span><span class="w"> </span><span class="s2">"hello"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"likes"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+</div>
+
+<div title="cURL" class="language-shell highlighter-rouge"><pre class="highlight"><code>curl -i -XGET -H <span class="s2">"Ckey: YOUR_APP_CKEY"</span> http://api.hurakann/v1/user?branch_id<span class="o">=</span>YOUR_BRANCH_ID&amp;user_id<span class="o">=</span>ID&amp;phase<span class="o">=</span>all
+</code></pre>
+</div>
+
+                </section>
+            </section>
+        
+            <section class="doc-content">
+                <section class="left-docs">
+                    <h3>
+                        <a id="apiavailability_get">
+                            /user/availability
+                            
+                                <span class="endpoint get"></span>
+                            
+                        </a>
+                    </h3>
+                    
+                        <p class="description">Check the existence of an object into datastore</p>
+                    
+                    <h6>Parameters</h6><dl>
+  <dt>identity</dt>
+  <dd>The attribute to eval, can be: an email or username of an object previously stored</dd>
+</dl>
+
+<p class="success">If response code is 200 object exists in datastore otherwise 404 is returned.</p>
+
+<div title="cURL" class="language-shell highlighter-rouge"><pre class="highlight"><code>curl -i -XGET -H <span class="s2">"Ckey: YOUR_APP_CKEY"</span> http://api.hurakann/v1/user/availability?identity<span class="o">=</span>wind@hurakann.com
+</code></pre>
+</div>
+
+                </section>
+            </section>
+        
+            <section class="doc-content">
+                <section class="left-docs">
+                    <h3>
+                        <a id="apiiscolor_get">
+                            /user/is_color
+                            
+                                <span class="endpoint get"></span>
+                            
+                        </a>
+                    </h3>
+                    
+                        <p class="description">Check if an object is the color requested from datastore</p>
+                    
+                    <h6>Parameters</h6><dl>
+  <dt>user_id</dt>
+  <dd>The id of the object previously stored</dd>
+  <dt>color</dt>
+  <dd>The color to check, can be: <code class="highlighter-rouge">blue</code> or <code class="highlighter-rouge">black</code></dd>
+</dl>
+
+<p class="success">If object is in the color requested return its branch id</p>
+
+<div title="Response" class="language-json highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"branch_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ID"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+</div>
+
+<div title="cURL" class="language-shell highlighter-rouge"><pre class="highlight"><code>curl -i -XGET -H <span class="s2">"Ckey: YOUR_APP_CKEY"</span> http://api.hurakann/v1/user/is_color?user_id<span class="o">=</span>ID&amp;color<span class="o">=</span>black
+</code></pre>
+</div>
+
+                </section>
+            </section>
+        
+            <section class="doc-content">
+                <section class="left-docs">
+                    <h3>
+                        <a id="apifile_add">
+                            /user/file
+                            
+                                <span class="endpoint post"></span>
+                            
+                        </a>
+                    </h3>
+                    
+                        <p class="description">Upload a file into datastore</p>
+                    
+                    <h6>Parameters</h6><dl>
+  <dt>multipart/form-data</dt>
+  <dd>The file in a multipart form-data format</dd>
+</dl>
+
+<p class="success">The file will be stored into datastore and return its id</p>
+
+<div title="Response" class="language-json highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"file_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ID"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+</div>
+
+<div title="cURL" class="language-shell highlighter-rouge"><pre class="highlight"><code>curl -i -XPOST -H <span class="s2">"Ckey: YOUR_APP_CKEY"</span> -H <span class="s2">"Content-Type: multipart/form-data"</span> -F <span class="s2">"file=@storm.png"</span> http://api.hurakann/v1/user/file
+</code></pre>
+</div>
+
+                </section>
+            </section>
+        
+            <section class="doc-content">
+                <section class="left-docs">
+                    <h3>
+                        <a id="apifile_delete">
+                            /user/file
+                            
+                                <span class="endpoint delete"></span>
+                            
+                        </a>
+                    </h3>
+                    
+                        <p class="description">Removes a file from datastore</p>
+                    
+                    <h6>Parameters</h6><dl>
+  <dt>file_id</dt>
+  <dd>The id for the file previously uploaded</dd>
+</dl>
+
+<p class="success">The file will be removed from datastore</p>
+
+<div title="cURL" class="language-shell highlighter-rouge"><pre class="highlight"><code>curl -i -XDELETE -H <span class="s2">"Ckey: YOUR_APP_CKEY"</span> -d <span class="s1">'{"file_id": "ID"}'</span> http://api.hurakann/v1/user/file
+</code></pre>
+</div>
+
+                </section>
+            </section>
+        
+            <section class="doc-content">
+                <section class="left-docs">
+                    <h3>
+                        <a id="apifile_get">
+                            /user/file
+                            
+                                <span class="endpoint get"></span>
+                            
+                        </a>
+                    </h3>
+                    
+                        <p class="description">Download a file from datastore</p>
+                    
+                    <h6>Parameters</h6><dl>
+  <dt>file_id</dt>
+  <dd>The id for the file previously uploaded</dd>
+</dl>
+
+<p class="success">The file will be downloaded from datastore with a custom mime type</p>
+
+<div title="cURL" class="language-shell highlighter-rouge"><pre class="highlight"><code>curl -i -XGET -H <span class="s2">"Ckey: YOUR_APP_CKEY"</span> http://api.hurakann/v1/user/file?file_id<span class="o">=</span>ID
+</code></pre>
+</div>
+
+                </section>
+            </section>
+        
+            <section class="doc-content">
+                <section class="left-docs">
+                    <h3>
+                        <a id="apilogin">
+                            /user/login
+                            
+                                <span class="endpoint get"></span>
+                            
+                        </a>
+                    </h3>
+                    
+                        <p class="description">Executes a login of an object from datastore</p>
+                    
+                    <h6>Parameters</h6><dl>
+  <dt>user</dt>
+  <dd>The key for the object, can be: email or username</dd>
+  <dt>password</dt>
+  <dd>The password for the object</dd>
+</dl>
+
+<p class="success">Performs the login action and return the results</p>
+
+<div title="Response" class="language-json highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ID"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NAME_IF_SET"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"lastname"</span><span class="p">:</span><span class="w"> </span><span class="s2">"LASTNAME_IF_SET"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"lastname2"</span><span class="p">:</span><span class="w"> </span><span class="s2">"LASTNAME2_IF_SET"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"branch_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ID"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+</div>
+
+<div title="cURL" class="language-shell highlighter-rouge"><pre class="highlight"><code>curl -i -XGET -H <span class="s2">"Ckey: YOUR_APP_CKEY"</span> http://api.hurakann/v1/user/login?user<span class="o">=</span>wind@hurakann.com&amp;password<span class="o">=</span>storm
+</code></pre>
+</div>
+
+                </section>
+            </section>
+        
+            <section class="doc-content">
+                <section class="left-docs">
+                    <h3>
+                        <a id="apirestore">
+                            /user/login/restore
+                            
+                                <span class="endpoint get"></span>
+                            
+                        </a>
+                    </h3>
+                    
+                        <p class="description">Provides a valid code during next 24 hours to reset object password</p>
+                    
+                    <h6>Parameters</h6><dl>
+  <dt>email</dt>
+  <dd>The email for the object</dd>
+</dl>
+
+<p class="success">Provides a code valid next 24 hours to reset password</p>
+
+<div title="Response" class="language-json highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"WIND"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+</div>
+
+<div title="cURL" class="language-shell highlighter-rouge"><pre class="highlight"><code>curl -i -XGET -H <span class="s2">"Ckey: YOUR_APP_CKEY"</span> http://api.hurakann/v1/user/login/restore?email<span class="o">=</span>wind@hurakann.com
+</code></pre>
+</div>
+
+                </section>
+            </section>
+        
+            <section class="doc-content">
+                <section class="left-docs">
+                    <h3>
+                        <a id="apireset">
+                            /user/login/reset
+                            
+                                <span class="endpoint post"></span>
+                            
+                        </a>
+                    </h3>
+                    
+                        <p class="description">Reset object password using a valid code</p>
+                    
+                    <h6>Parameters</h6><dl>
+  <dt>email</dt>
+  <dd>The email for the object</dd>
+  <dt>new_password</dt>
+  <dd>The new password for the object</dd>
+  <dt>code</dt>
+  <dd>The code previously generated with restore api</dd>
+</dl>
+
+<p class="success">Reset the object password using a valid code</p>
+
+<div title="cURL" class="language-shell highlighter-rouge"><pre class="highlight"><code>curl -i -XPOST -H <span class="s2">"Ckey: YOUR_APP_CKEY"</span> -d <span class="s1">'{"email": "wind@hurakann.com", "new_password": "WIND", "code": "STORM"}'</span> http://api.hurakann/v1/user/login/reset
+</code></pre>
+</div>
+
+                </section>
+            </section>
+        
+            <section class="doc-content">
+                <section class="left-docs">
+                    <h3>
+                        <a id="apichangepass">
+                            /user/login/change_password
+                            
+                                <span class="endpoint put"></span>
+                            
+                        </a>
+                    </h3>
+                    
+                        <p class="description">Change the object password with a new one</p>
+                    
+                    <h6>Parameters</h6><dl>
+  <dt>user_id</dt>
+  <dd>The id for the object previously stored</dd>
+  <dt>old_password</dt>
+  <dd>The old password for the object</dd>
+  <dt>new_password</dt>
+  <dd>The new password for the object</dd>
+</dl>
+
+<p class="success">Change the object password with a new one into datastore</p>
+
+<div title="cURL" class="language-shell highlighter-rouge"><pre class="highlight"><code>curl -i -XPUT -H <span class="s2">"Ckey: YOUR_APP_CKEY"</span> -d <span class="s1">'{"user_id": "ID", "old_password": "STORM", "new_password": "WIND"}'</span> http://api.hurakann/v1/user/login/change_password
+</code></pre>
+</div>
+
+                </section>
+            </section>
+        
+            <section class="doc-content">
+                <section class="left-docs">
+                    <h3>
+                        <a id="apimerge_add">
+                            /user/merge
+                            
+                                <span class="endpoint post"></span>
+                            
+                        </a>
+                    </h3>
+                    
+                        <p class="description">Merges two or more objects into a collection</p>
+                    
+                    <h6>Parameters</h6><dl>
+  <dt>branch_id</dt>
+  <dd>The branch id of the main object</dd>
+  <dt>main_user_id</dt>
+  <dd>The id of the main object in the collection</dd>
+  <dt>users_id</dt>
+  <dd>The ids of the objects to be set into collection</dd>
+</dl>
+
+<p class="success">Merge two or more objects into a collection and set an object as the main of the collection</p>
+
+<div title="cURL" class="language-shell highlighter-rouge"><pre class="highlight"><code>curl -i -XPOST -H <span class="s2">"Ckey: YOUR_APP_CKEY"</span> -d <span class="s1">'{"branch_id": "ID", "main_user_id": "ID", users_id: ["ID", "ID"]}'</span> http://api.hurakann/v1/user/merge
+</code></pre>
+</div>
+
+                </section>
+            </section>
+        
+            <section class="doc-content">
+                <section class="left-docs">
+                    <h3>
+                        <a id="apimerge_update">
+                            /user/merge
+                            
+                                <span class="endpoint put"></span>
+                            
+                        </a>
+                    </h3>
+                    
+                        <p class="description">Update objects in merged collection</p>
+                    
+                    <h6>Parameters</h6><dl>
+  <dt>branch_id</dt>
+  <dd>The branch id of the main object</dd>
+  <dt>main_user_id</dt>
+  <dd>The id of the main object in the collection</dd>
+  <dt>users_id</dt>
+  <dd>The ids of the objects to be set into collection</dd>
+  <dt>new_main_user_id</dt>
+  <dd>The id of the new main object in the collection</dd>
+</dl>
+
+<p class="success">Updates merged collection and set an object as the main of the collection</p>
+
+<div title="cURL" class="language-shell highlighter-rouge"><pre class="highlight"><code>curl -i -XPUT -H <span class="s2">"Ckey: YOUR_APP_CKEY"</span> -d <span class="s1">'{"branch_id": "ID", "main_user_id": "ID", users_id: ["ID", "ID"], "new_main_user_id": "ID"}'</span> http://api.hurakann/v1/user/merge
+</code></pre>
+</div>
+
+                </section>
+            </section>
+        
+            <section class="doc-content">
+                <section class="left-docs">
+                    <h3>
+                        <a id="apimerge_get">
+                            /user/merge
+                            
+                                <span class="endpoint get"></span>
+                            
+                        </a>
+                    </h3>
+                    
+                        <p class="description">Get objects from merged collection</p>
+                    
+                    <h6>Parameters</h6><dl>
+  <dt>user_id</dt>
+  <dd>The id of the main object in the collection</dd>
+</dl>
+
+<p class="success">Gets merged collection using the main object</p>
+
+<div title="Response" class="language-json highlighter-rouge"><pre class="highlight"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ID"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NAME_IF_SET"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"merge"</span><span class="p">:</span><span class="w"> </span><span class="s2">"main"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ID"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NAME_IF_SET"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"merge"</span><span class="p">:</span><span class="w"> </span><span class="s2">"merge"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre>
+</div>
+
+<div title="cURL" class="language-shell highlighter-rouge"><pre class="highlight"><code>curl -i -XGET -H <span class="s2">"Ckey: YOUR_APP_CKEY"</span> http://api.hurakann/v1/user/merge?user_id<span class="o">=</span>ID
+</code></pre>
+</div>
+
+                </section>
+            </section>
+        
+            <section class="doc-content">
+                <section class="left-docs">
+                    <h3>
+                        <a id="apinotification_add">
+                            /user/notifications
+                            
+                                <span class="endpoint post"></span>
+                            
+                        </a>
+                    </h3>
+                    
+                        <p class="description">Creates a notification linked to an object or its tree into datastore</p>
+                    
+                    <h6>Parameters</h6><dl>
+  <dt>title</dt>
+  <dd>The title for the notification</dd>
+  <dt>message</dt>
+  <dd>The body for the notification</dd>
+  <dt>broot</dt>
+  <dd>The branch id of the object to send notification to all its objects under its branch</dd>
+  <dt>branch_id</dt>
+  <dd>The branch id of the object to link directly the notification</dd>
+</dl>
+
+<p class="success">Creates a notification for a complete tree or single linked to an object</p>
+
+<div title="cURL" class="language-shell highlighter-rouge"><pre class="highlight"><code>curl -i -XGET -H <span class="s2">"Ckey: YOUR_APP_CKEY"</span> -d <span class="s1">'{"title": "Welcome", "message": "This is Hurakann", "branch_id": "ID"}'</span> http://api.hurakann/v1/user/notifications
+</code></pre>
+</div>
+
+                </section>
+            </section>
+        
+            <section class="doc-content">
+                <section class="left-docs">
+                    <h3>
+                        <a id="apinotification_update">
+                            /user/notifications
+                            
+                                <span class="endpoint put"></span>
+                            
+                        </a>
+                    </h3>
+                    
+                        <p class="description">Mark as read or unread the notification</p>
+                    
+                    <h6>Parameters</h6><dl>
+  <dt>notification_id</dt>
+  <dd>The id for the notification previously stored</dd>
+  <dt>read</dt>
+  <dd>The status of the read, true or false</dd>
+</dl>
+
+<p class="success">Mark the notification read or not into datastore</p>
+
+<div title="cURL" class="language-shell highlighter-rouge"><pre class="highlight"><code>curl -i -XPUT -H <span class="s2">"Ckey: YOUR_APP_CKEY"</span> -d <span class="s1">'{"notification_id": "ID", "read": true}'</span> http://api.hurakann/v1/user/notifications
+</code></pre>
+</div>
+
+                </section>
+            </section>
+        
+            <section class="doc-content">
+                <section class="left-docs">
+                    <h3>
+                        <a id="apinotification_delete">
+                            /user/notifications
+                            
+                                <span class="endpoint delete"></span>
+                            
+                        </a>
+                    </h3>
+                    
+                        <p class="description">Deletes a notification from datastore</p>
+                    
+                    <h6>Parameters</h6><dl>
+  <dt>branch_id</dt>
+  <dd>The branch id where the notificatio was linked</dd>
+  <dt>notification_id</dt>
+  <dd>The id for the notification previously stored</dd>
+</dl>
+
+<p class="success">Deletes a notification from datastore</p>
+
+<div title="cURL" class="language-shell highlighter-rouge"><pre class="highlight"><code>curl -i -XDELETE -H <span class="s2">"Ckey: YOUR_APP_CKEY"</span> -d <span class="s1">'{"branch_id": "ID", "notification_id": "ID"}'</span> http://api.hurakann/v1/user/notifications
+</code></pre>
+</div>
+
+                </section>
+            </section>
+        
+            <section class="doc-content">
+                <section class="left-docs">
+                    <h3>
+                        <a id="apinotification_get">
+                            /user/notifications
+                            
+                                <span class="endpoint get"></span>
+                            
+                        </a>
+                    </h3>
+                    
+                        <p class="description">Get a list of notifications or a single one linked to an object</p>
+                    
+                    <h6>Parameters</h6><dl>
+  <dt>branch_id</dt>
+  <dd>The branch id where the notificatio was linked</dd>
+  <dt>notification_id</dt>
+  <dd>The id for the notification previously stored</dd>
+</dl>
+
+<p class="success">Get a single notification if provides notification_id, if not return all linked to branch id</p>
+
+<div title="Response List" class="language-json highlighter-rouge"><pre class="highlight"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"A new storm"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"read"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"notification_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ID"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10:00"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-01-01"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Welcome to Hurakann"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre>
+</div>
+
+<div title="Response Single" class="language-json highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"A new storm"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"read"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"notification_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ID"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10:00"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-01-01"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Welcome to Hurakann"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+</div>
+
+<div title="cURL" class="language-shell highlighter-rouge"><pre class="highlight"><code>curl -i -XGET -H <span class="s2">"Ckey: YOUR_APP_CKEY"</span> http://api.hurakann/v1/user/notifications?branch_id<span class="o">=</span>ID
+</code></pre>
+</div>
+
+                </section>
+            </section>
+        
+            <section class="doc-content">
+                <section class="left-docs">
+                    <h3>
+                        <a id="apisearch">
+                            /user/search/ql
+                            
+                                <span class="endpoint get"></span>
+                            
+                        </a>
+                    </h3>
+                    
+                        <p class="description">Executes a HQL search into datastore</p>
+                    
+                    <h6>Parameters</h6><dl>
+  <dt>branch_id</dt>
+  <dd>The branch id of the tree level</dd>
+  <dt>thql</dt>
+  <dd>The query to execute, see HQL for more info</dd>
+  <dt>pagination</dt>
+  <dd>The number of rows for page</dd>
+  <dt>page</dt>
+  <dd>The page to return, only when using pagination</dd>
+  <dt>pagination_id</dt>
+  <dd>The pagination id, only when using pagination</dd>
+</dl>
+
+<p class="info">In the users array are the resultset, all INCLUDE field should be placed here</p>
+
+<p class="success">Executes a HQL query into datastore, page and pagination must be sent when walk into pages</p>
+
+<div title="Response" class="language-json highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"total_results"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"pagination_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ID"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"pages"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"users"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"user_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ID"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"profile_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ID"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"phase"</span><span class="p">:</span><span class="w"> </span><span class="s2">"phase1"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"merge"</span><span class="p">:</span><span class="w"> </span><span class="s2">"main"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"broot"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ID"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="err">}</span><span class="w">
+</span><span class="err">}</span><span class="w">
+</span></code></pre>
+</div>
+
+<div title="cURL" class="language-shell highlighter-rouge"><pre class="highlight"><code>curl -i -XGET -H <span class="s2">"Ckey: YOUR_APP_CKEY"</span> http://api.hurakann/v1/user/notifications?branch_id<span class="o">=</span>ID&amp;pagination<span class="o">=</span>10&amp;thql<span class="o">=</span>WHERE name:s<span class="o">=</span>Hurakann
+</code></pre>
+</div>
+
+                </section>
+            </section>
+        
+            <section class="doc-content">
+                <section class="left-docs">
+                    <h3>
+                        <a id="apitags_add">
+                            /user/tags
+                            
+                                <span class="endpoint post"></span>
+                            
+                        </a>
+                    </h3>
+                    
+                        <p class="description">Add tags to object into datastore</p>
+                    
+                    <h6>Parameters</h6><dl>
+  <dt>user_id</dt>
+  <dd>The id for the object previously stored</dd>
+  <dt>tags</dt>
+  <dd>The list of tags to be added</dd>
+</dl>
+
+<p class="success">Add tags to object into datastore</p>
+
+<div title="cURL" class="language-shell highlighter-rouge"><pre class="highlight"><code>curl -i -XPOST -H <span class="s2">"Ckey: YOUR_APP_CKEY"</span> -d <span class="s1">'{"user_id": "ID", "tags": ["wind", "cold"]}'</span> http://api.hurakann/v1/user/tags
+</code></pre>
+</div>
+
+                </section>
+            </section>
+        
+            <section class="doc-content">
+                <section class="left-docs">
+                    <h3>
+                        <a id="apitags_update">
+                            /user/tags
+                            
+                                <span class="endpoint put"></span>
+                            
+                        </a>
+                    </h3>
+                    
+                        <p class="description">Update tags to object into datastore</p>
+                    
+                    <h6>Parameters</h6><dl>
+  <dt>user_id</dt>
+  <dd>The id for the object previously stored</dd>
+  <dt>tags</dt>
+  <dd>The list of tags to be updated</dd>
+</dl>
+
+<p class="success">Update tags to object into datastore</p>
+
+<div title="cURL" class="language-shell highlighter-rouge"><pre class="highlight"><code>curl -i -XPUT -H <span class="s2">"Ckey: YOUR_APP_CKEY"</span> -d <span class="s1">'{"user_id": "ID", "tags": ["wind", "cold"]}'</span> http://api.hurakann/v1/user/tags
+</code></pre>
+</div>
+
+                </section>
+            </section>
+        
+            <section class="doc-content">
+                <section class="left-docs">
+                    <h3>
+                        <a id="apitags_get">
+                            /user/tags
+                            
+                                <span class="endpoint get"></span>
+                            
+                        </a>
+                    </h3>
+                    
+                        <p class="description">Get tags of object from datastore</p>
+                    
+                    <h6>Parameters</h6><dl>
+  <dt>user_id</dt>
+  <dd>The id for the object previously stored</dd>
+</dl>
+
+<p class="success">Get tags of object from datastore</p>
+
+<div title="Response" class="language-json highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"tags"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"wind"</span><span class="p">,</span><span class="w"> </span><span class="s2">"storm"</span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+</div>
+
+<div title="cURL" class="language-shell highlighter-rouge"><pre class="highlight"><code>curl -i -XGET -H <span class="s2">"Ckey: YOUR_APP_CKEY"</span> http://api.hurakann/v1/user/tags?user_id<span class="o">=</span>ID
+</code></pre>
+</div>
+
+                </section>
+            </section>
+        
+            <section class="doc-content">
+                <section class="left-docs">
+                    <h3>
+                        <a id="apifingerprintcheck">
+                            /fingerprint/verify
+                            
+                                <span class="endpoint get"></span>
+                            
+                        </a>
+                    </h3>
+                    
+                        <p class="description">Check if provided fingerprint match the fingerprints of object into datastore</p>
+                    
+                    <h6>Parameters</h6><dl>
+  <dt>user_id</dt>
+  <dd>The id for the object previously stored</dd>
+  <dt>id</dt>
+  <dd>The fingerprint in base64</dd>
+</dl>
+
+<p class="info">Fingerprint base64 must be in format <code class="highlighter-rouge">ISO-19794-2-2005</code></p>
+
+<p class="success">Check if provided fingerprint match the fingerprints stored</p>
+
+<div title="cURL" class="language-shell highlighter-rouge"><pre class="highlight"><code>curl -i -XGET -H <span class="s2">"Ckey: YOUR_APP_CKEY"</span> http://api.hurakann/v1/fingerprint/verify?user_id<span class="o">=</span>ID&amp;id<span class="o">=</span>BASE64
+</code></pre>
+</div>
+
+                </section>
+            </section>
+        
+            <section class="doc-content">
+                <section class="left-docs">
+                    <h3>
+                        <a id="apifingerprintmatch">
+                            /match/fingerprint
+                            
+                                <span class="endpoint get"></span>
+                            
+                        </a>
+                    </h3>
+                    
+                        <p class="description">Compare two fingerprints and check if match</p>
+                    
+                    <h6>Parameters</h6><dl>
+  <dt>fmd_right</dt>
+  <dd>The right fingerprint in base64</dd>
+  <dt>fmd_left</dt>
+  <dd>The left fingerprint in base64</dd>
+</dl>
+
+<p class="info">Fingerprints base64 must be in format <code class="highlighter-rouge">ISO-19794-2-2005</code></p>
+
+<p class="success">Compare two fingerprints and check if they match or not</p>
+
+<div title="cURL" class="language-shell highlighter-rouge"><pre class="highlight"><code>curl -i -XGET -H <span class="s2">"Ckey: YOUR_APP_CKEY"</span> http://api.hurakann/v1/match/fingerprint?fmd_left<span class="o">=</span>BASE64&amp;fmd_right<span class="o">=</span>BASE64
+</code></pre>
+</div>
+
+                </section>
+            </section>
+        
+            <section class="doc-content">
+                <section class="left-docs">
+                    <h3>
+                        <a id="apimobile_update">
+                            /mobile/register
+                            
+                                <span class="endpoint put"></span>
+                            
+                        </a>
+                    </h3>
+                    
+                        <p class="description">Update the status of token mobile device to send push notifications</p>
+                    
+                    <h6>Parameters</h6><dl>
+  <dt>user_id</dt>
+  <dd>The id of the object previously stored</dd>
+  <dt>token</dt>
+  <dd>The token of the mobile device</dd>
+  <dt>status</dt>
+  <dd>The status of the token, active or inactive</dd>
+</dl>
+
+<p class="success">Update the status of token mobile device to send push notifications</p>
+
+<div title="cURL" class="language-shell highlighter-rouge"><pre class="highlight"><code>curl -i -XPUT -H <span class="s2">"Ckey: YOUR_APP_CKEY"</span> -d <span class="s1">'{"user_id": "ID", "token": "TOKEN", "status": "active"}'</span> http://api.hurakann/v1/mobile/register
+</code></pre>
+</div>
+
+                </section>
+            </section>
+        
+            <section class="doc-content">
+                <section class="left-docs">
+                    <h3>
+                        <a id="apimobile_add">
+                            /mobile/register
+                            
+                                <span class="endpoint post"></span>
+                            
+                        </a>
+                    </h3>
+                    
+                        <p class="description">Link an object with a mobile device to send push notifications</p>
+                    
+                    <h6>Parameters</h6><dl>
+  <dt>user_id</dt>
+  <dd>The id of the object previously stored</dd>
+  <dt>branch_id</dt>
+  <dd>The branch id of the object previously stored</dd>
+  <dt>broot</dt>
+  <dd>The parent branch id of the object</dd>
+  <dt>token</dt>
+  <dd>The token of the mobile device</dd>
+  <dt>status</dt>
+  <dd>The status of the token, active or inactive</dd>
+  <dt>platform</dt>
+  <dd>The platform for the device, can be: android or IOS</dd>
+</dl>
+
+<p class="success">Link an object with a mobile device to send push notifications, an object can have multiple devices!</p>
+
+<div title="cURL" class="language-shell highlighter-rouge"><pre class="highlight"><code>curl -i -XPOST -H <span class="s2">"Ckey: YOUR_APP_CKEY"</span> -d <span class="s1">'{"user_id": "ID", "branch_id": "ID", "broot": "ID", "token": "TOKEN", "status": "active", "platform": "IOS"}'</span> http://api.hurakann/v1/mobile/register
+</code></pre>
+</div>
+
+                </section>
+            </section>
+        
+            <section class="doc-content">
+                <section class="left-docs">
+                    <h3>
+                        <a id="apimobile_send">
+                            /mobile/send
+                            
+                                <span class="endpoint post"></span>
+                            
+                        </a>
+                    </h3>
+                    
+                        <p class="description">Send a push notification to the provided objects</p>
+                    
+                    <h6>Parameters</h6><dl>
+  <dt>users_id</dt>
+  <dd>The ids of the objects previously stored to send push notification</dd>
+  <dt>payload</dt>
+  <dd>The payload of the push notification</dd>
+  <dt>expiry</dt>
+  <dd>The expiry of the push notification, only for iOS</dd>
+  <dt>identifier</dt>
+  <dd>The identifier for the push notification, only for iOS</dd>
+</dl>
+
+<p class="success">Send a push notification to the provided objects in the token platform registered</p>
+
+<div title="cURL" class="language-shell highlighter-rouge"><pre class="highlight"><code>curl -i -XPOST -H <span class="s2">"Ckey: YOUR_APP_CKEY"</span> -d <span class="s1">'{"users_id": ["ID"], "payload": "Hurakann!", "expiry": 30, "identifier": "I"}'</span> http://api.hurakann/v1/mobile/send
+</code></pre>
+</div>
+
+                </section>
+            </section>
+        
+            <section class="doc-content">
+                <section class="left-docs">
+                    <h3>
+                        <a id="apigeospatial_add">
+                            /v1/geospatial
+                            
+                                <span class="endpoint post"></span>
+                            
+                        </a>
+                    </h3>
+                    
+                        <p class="description">Index a location into geospatial datastore</p>
+                    
+                    <h6>Parameters</h6><dl>
+  <dt>latitude</dt>
+  <dd>The latitude for the location</dd>
+  <dt>longitude</dt>
+  <dd>The longitude for the location</dd>
+  <dt>id</dt>
+  <dd>The id of the object previously stored into datastore</dd>
+  <dt>name</dt>
+  <dd>An optional name for the location in geospatial datastore</dd>
+</dl>
+
+<p class="success">Index a location into geospatial datastore</p>
+
+<div title="cURL" class="language-shell highlighter-rouge"><pre class="highlight"><code>curl -i -XPOST -H <span class="s2">"Ckey: YOUR_APP_CKEY"</span> -d <span class="s1">'{"latitude": "0", "longitude": "0", "id": "ID", "name": "Wind"}'</span> http://api.hurakann/v1/geospatial
+</code></pre>
+</div>
+
+                </section>
+            </section>
+        
+            <section class="doc-content">
+                <section class="left-docs">
+                    <h3>
+                        <a id="apigeospatial_update">
+                            /v1/geospatial
+                            
+                                <span class="endpoint put"></span>
+                            
+                        </a>
+                    </h3>
+                    
+                        <p class="description">Re-index a location into geospatial datastore</p>
+                    
+                    <h6>Parameters</h6><dl>
+  <dt>latitude</dt>
+  <dd>The latitude for the location</dd>
+  <dt>longitude</dt>
+  <dd>The longitude for the location</dd>
+  <dt>id</dt>
+  <dd>The id of the object previously stored into geospatial datastore</dd>
+  <dt>name</dt>
+  <dd>An optional name for the location in geospatial datastore</dd>
+</dl>
+
+<p class="success">Re-index a location into geospatial datastore</p>
+
+<div title="cURL" class="language-shell highlighter-rouge"><pre class="highlight"><code>curl -i -XPOST -H <span class="s2">"Ckey: YOUR_APP_CKEY"</span> -d <span class="s1">'{"latitude": "0", "longitude": "0", "id": "ID", "name": "Wind"}'</span> http://api.hurakann/v1/geospatial
+</code></pre>
+</div>
+
+                </section>
+            </section>
+        
+            <section class="doc-content">
+                <section class="left-docs">
+                    <h3>
+                        <a id="apigeospatial_get">
+                            /v1/geospatial
+                            
+                                <span class="endpoint get"></span>
+                            
+                        </a>
+                    </h3>
+                    
+                        <p class="description">Search locations near of a given point into geospatial datastore</p>
+                    
+                    <h6>Parameters</h6><dl>
+  <dt>lat</dt>
+  <dd>The latitude for the location</dd>
+  <dt>lon</dt>
+  <dd>The longitude for the location</dd>
+  <dt>d</dt>
+  <dd>The distance from the given point (in km)</dd>
+  <dt>max</dt>
+  <dd>The max resultset of locations near of given point</dd>
+</dl>
+
+<p class="success">Search locations near of a given point into geospatial datastore</p>
+
+<div class="language-json highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"geos"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"km"</span><span class="p">:</span><span class="w"> </span><span class="mf">10.4</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ID"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Wind Avenue"</span><span class="w">
+    </span><span class="p">}</span><span class="w"> 
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+</div>
+
+<div title="cURL" class="language-shell highlighter-rouge"><pre class="highlight"><code>curl -i -XGET -H <span class="s2">"Ckey: YOUR_APP_CKEY"</span> http://api.hurakann/v1/geospatial?lat<span class="o">=</span>0&amp;lon<span class="o">=</span>0&amp;max<span class="o">=</span>10&amp;d<span class="o">=</span>10
+</code></pre>
+</div>
+
+                </section>
+            </section>
+        
 
 
-		</div>
-		<!--<script>
-			document.getElementById("open-nav").addEventListener("click", function () {
-				document.body.classList.toggle("nav-open");
-			});
-		</script>-->
-	</body>
+        </div>
+        <script>
+           document.getElementById("open-nav").addEventListener("click", function () {
+             document.body.classList.toggle("nav-open");
+           });
+        </script>
+    </body>
 </html>
