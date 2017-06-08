@@ -1,5 +1,5 @@
 ---
-title: /v1/geospatial
+title: /geospatial
 position: 28
 type: post
 description: Index a location into geospatial datastore

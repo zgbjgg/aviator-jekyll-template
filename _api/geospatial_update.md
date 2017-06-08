@@ -1,5 +1,5 @@
 ---
-title: /v1/geospatial
+title: /geospatial
 position: 29
 type: put
 description: Re-index a location into geospatial datastore

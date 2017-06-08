@@ -1,5 +1,5 @@
 ---
-title: /v1/geospatial
+title: /geospatial
 position: 30
 type: get
 description: Search locations near of a given point into geospatial datastore 
