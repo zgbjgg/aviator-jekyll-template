@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://hurakann.com/</loc>
+<loc>http://localhost:4000/</loc>
 </url>
 <url>
-<loc>http://hurakann.com/docs/index.html</loc>
-<lastmod>2017-06-07T22:02:54-05:00</lastmod>
+<loc>http://localhost:4000/docs/index.html</loc>
+<lastmod>2017-06-07T22:03:38-05:00</lastmod>
 </url>
 <url>
-<loc>http://hurakann.com/docs/search/index.html</loc>
-<lastmod>2017-06-07T22:02:54-05:00</lastmod>
+<loc>http://localhost:4000/docs/search/index.html</loc>
+<lastmod>2017-06-07T22:03:38-05:00</lastmod>
 </url>
 </urlset>
