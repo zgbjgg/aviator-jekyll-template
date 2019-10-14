@@ -38,7 +38,7 @@ Executes a HQL query into datastore, page and pagination must be sent when walk 
       "merge": "main",
       "broot": "ID"
     }
-  }
+  ]
 }
 ~~~
 {: title="Response"}
