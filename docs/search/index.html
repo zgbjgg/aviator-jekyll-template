@@ -11,22 +11,22 @@
 <meta property="og:title" content="Search" />
 <meta name="description" content="Cloud Programming Engine." />
 <meta property="og:description" content="Cloud Programming Engine." />
-<link rel="canonical" href="http://localhost:4000/search/" />
-<meta property="og:url" content="http://localhost:4000/search/" />
+<link rel="canonical" href="https://zgbjgg.github.io/aviator-jekyll-template//search/" />
+<meta property="og:url" content="https://zgbjgg.github.io/aviator-jekyll-template//search/" />
 <meta property="og:site_name" content="Hurakann" />
 <script type="application/ld+json">
 {"@context": "http://schema.org",
 "@type": "WebPage",
 "headline": "Search",
 "description": "Cloud Programming Engine.",
-"url": "http://localhost:4000/search/"}</script>
+"url": "https://zgbjgg.github.io/aviator-jekyll-template//search/"}</script>
 <!-- End Jekyll SEO tag -->
 
         
     </head>
     <body>
         <header>
-            <h1>
+            <h1 style="background-color: #122530 !important;">
                 <a href="/"></a>
                 <button type="button" class="open-nav" id="open-nav"></button>
             </h1>
@@ -217,16 +217,16 @@
                     </li>
                     
                     <li>
-                        <a href="/#apinotification_add">
+                        <a href="/#apinotification_update">
                             /user/notifications
-                            <span class="endpoint post"></span>
+                            <span class="endpoint put"></span>
                         </a>
                     </li>
                     
                     <li>
-                        <a href="/#apinotification_update">
+                        <a href="/#apinotification_add">
                             /user/notifications
-                            <span class="endpoint put"></span>
+                            <span class="endpoint post"></span>
                         </a>
                     </li>
                     
@@ -820,7 +820,7 @@
             "description": "Executes a HQL search into datastore",
             "type": "get",
             "url": "/#apisearch",
-            "content": "branch_id\n  The branch id of the tree level\n  thql\n  The query to execute, see HQL for more info\n  pagination\n  The number of rows for page\n  page\n  The page to return, only when using pagination\n  pagination_id\n  The pagination id, only when using pagination\n\n\nIn the users array are the resultset, all INCLUDE field should be placed here\n\nExecutes a HQL query into datastore, page and pagination must be sent when walk into pages\n\n{\n  \"total_results\": 100,\n  \"pagination_id\": \"ID\",\n  \"pages\": 10,\n  \"users\": [\n    {\n      \"user_id\": \"ID\",\n      \"profile_id\": \"ID\",\n      \"phase\": \"phase1\",\n      \"merge\": \"main\",\n      \"broot\": \"ID\"\n    }\n  }\n}\n\n\n\ncurl -i -XGET -H \"Ckey: YOUR_APP_CKEY\" http://api.hurakann/v1/user/notifications?branch_id=ID&amp;pagination=10&amp;thql=WHERE name:s=Hurakann"
+            "content": "branch_id\n  The branch id of the tree level\n  thql\n  The query to execute, see HQL for more info\n  pagination\n  The number of rows for page\n  page\n  The page to return, only when using pagination\n  pagination_id\n  The pagination id, only when using pagination\n\n\nIn the users array are the resultset, all INCLUDE field should be placed here\n\nExecutes a HQL query into datastore, page and pagination must be sent when walk into pages\n\n{\n  \"total_results\": 100,\n  \"pagination_id\": \"ID\",\n  \"pages\": 10,\n  \"users\": [\n    {\n      \"user_id\": \"ID\",\n      \"profile_id\": \"ID\",\n      \"phase\": \"phase1\",\n      \"merge\": \"main\",\n      \"broot\": \"ID\"\n    }\n  ]\n}\n\n\n\ncurl -i -XGET -H \"Ckey: YOUR_APP_CKEY\" http://api.hurakann/v1/user/notifications?branch_id=ID&amp;pagination=10&amp;thql=WHERE name:s=Hurakann"
             }
             
             

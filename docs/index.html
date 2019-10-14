@@ -11,8 +11,8 @@
 <meta property="og:title" content="Hurakann Docs" />
 <meta name="description" content="Cloud Programming Engine." />
 <meta property="og:description" content="Cloud Programming Engine." />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
+<link rel="canonical" href="https://zgbjgg.github.io/aviator-jekyll-template//" />
+<meta property="og:url" content="https://zgbjgg.github.io/aviator-jekyll-template//" />
 <meta property="og:site_name" content="Hurakann" />
 <script type="application/ld+json">
 {"@context": "http://schema.org",
@@ -20,14 +20,14 @@
 "name": "Hurakann",
 "headline": "Hurakann Docs",
 "description": "Cloud Programming Engine.",
-"url": "http://localhost:4000/"}</script>
+"url": "https://zgbjgg.github.io/aviator-jekyll-template//"}</script>
 <!-- End Jekyll SEO tag -->
 
         
     </head>
     <body>
         <header>
-            <h1>
+            <h1 style="background-color: #122530 !important;">
                 <a href="/"></a>
                 <button type="button" class="open-nav" id="open-nav"></button>
             </h1>
@@ -218,16 +218,16 @@
                     </li>
                     
                     <li>
-                        <a href="#apinotification_add">
+                        <a href="#apinotification_update">
                             /user/notifications
-                            <span class="endpoint post"></span>
+                            <span class="endpoint put"></span>
                         </a>
                     </li>
                     
                     <li>
-                        <a href="#apinotification_update">
+                        <a href="#apinotification_add">
                             /user/notifications
-                            <span class="endpoint put"></span>
+                            <span class="endpoint post"></span>
                         </a>
                     </li>
                     
@@ -1662,6 +1662,35 @@ request will be enough.</p>
             <section class="doc-content">
                 <section class="left-docs">
                     <h3>
+                        <a id="apinotification_update">
+                            /user/notifications
+                            
+                                <span class="endpoint put"></span>
+                            
+                        </a>
+                    </h3>
+                    
+                        <p class="description">Mark as read or unread the notification</p>
+                    
+                    <h6>Parameters</h6><dl>
+  <dt>notification_id</dt>
+  <dd>The id for the notification previously stored</dd>
+  <dt>read</dt>
+  <dd>The status of the read, true or false</dd>
+</dl>
+
+<p class="success">Mark the notification read or not into datastore</p>
+
+<div title="cURL" class="language-shell highlighter-rouge"><pre class="highlight"><code>curl -i -XPUT -H <span class="s2">"Ckey: YOUR_APP_CKEY"</span> -d <span class="s1">'{"notification_id": "ID", "read": true}'</span> http://api.hurakann/v1/user/notifications
+</code></pre>
+</div>
+
+                </section>
+            </section>
+        
+            <section class="doc-content">
+                <section class="left-docs">
+                    <h3>
                         <a id="apinotification_add">
                             /user/notifications
                             
@@ -1686,35 +1715,6 @@ request will be enough.</p>
 <p class="success">Creates a notification for a complete tree or single linked to an object</p>
 
 <div title="cURL" class="language-shell highlighter-rouge"><pre class="highlight"><code>curl -i -XGET -H <span class="s2">"Ckey: YOUR_APP_CKEY"</span> -d <span class="s1">'{"title": "Welcome", "message": "This is Hurakann", "branch_id": "ID"}'</span> http://api.hurakann/v1/user/notifications
-</code></pre>
-</div>
-
-                </section>
-            </section>
-        
-            <section class="doc-content">
-                <section class="left-docs">
-                    <h3>
-                        <a id="apinotification_update">
-                            /user/notifications
-                            
-                                <span class="endpoint put"></span>
-                            
-                        </a>
-                    </h3>
-                    
-                        <p class="description">Mark as read or unread the notification</p>
-                    
-                    <h6>Parameters</h6><dl>
-  <dt>notification_id</dt>
-  <dd>The id for the notification previously stored</dd>
-  <dt>read</dt>
-  <dd>The status of the read, true or false</dd>
-</dl>
-
-<p class="success">Mark the notification read or not into datastore</p>
-
-<div title="cURL" class="language-shell highlighter-rouge"><pre class="highlight"><code>curl -i -XPUT -H <span class="s2">"Ckey: YOUR_APP_CKEY"</span> -d <span class="s1">'{"notification_id": "ID", "read": true}'</span> http://api.hurakann/v1/user/notifications
 </code></pre>
 </div>
 
@@ -1845,8 +1845,8 @@ request will be enough.</p>
       </span><span class="nt">"merge"</span><span class="p">:</span><span class="w"> </span><span class="s2">"main"</span><span class="p">,</span><span class="w">
       </span><span class="nt">"broot"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ID"</span><span class="w">
     </span><span class="p">}</span><span class="w">
-  </span><span class="err">}</span><span class="w">
-</span><span class="err">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
 </span></code></pre>
 </div>
 
